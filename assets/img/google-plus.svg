@@ -1,0 +1,18 @@
+<svg width="29" height="20" viewBox="0 0 29 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>google-plus</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-695 -2274)">
+<g id="google-plus">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(695 2274)" fill="#333333"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(715.74 2279.49)" fill="#333333"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 9.07377 8.23845L 9.07377 11.5338L 14.2199 11.5338C 14.0125 12.9481 12.6644 15.6805 9.07377 15.6805C 5.97573 15.6805 3.44803 12.9618 3.44803 9.61152C 3.44803 6.26122 5.97573 3.54253 9.07377 3.54253C 10.8367 3.54253 12.0163 4.33892 12.6903 5.02545L 15.1532 2.51273C 13.5718 0.947421 11.5237 0 9.07377 0C 4.05727 0 0 4.29772 0 9.61152C 0 14.9253 4.05727 19.223 9.07377 19.223C 14.3106 19.223 17.7846 15.3235 17.7846 9.83121C 17.7846 9.1996 17.7198 8.71902 17.642 8.23845L 9.07377 8.23845Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 7.77752 2.74615L 5.18501 2.74615L 5.18501 0L 2.59251 0L 2.59251 2.74615L 0 2.74615L 0 5.4923L 2.59251 5.4923L 2.59251 8.23845L 5.18501 8.23845L 5.18501 5.4923L 7.77752 5.4923"/>
+</defs>
+</svg>
