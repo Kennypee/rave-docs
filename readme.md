@@ -32,3 +32,9 @@ http://localhost:3000
 ```
 
 To create compressed, production-ready assets, run `npm run build`.
+
+To run the production-ready application, run `npm start -p 3001` to see it on 
+
+```
+http://localhost:3001
+```
