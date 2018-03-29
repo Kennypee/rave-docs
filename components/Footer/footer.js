@@ -12,7 +12,7 @@ const Footer = () => (
             </ul>
             <div className={style.gridContainer}>
                 <div className={style.gridColumn}>
-                    <img src="./assets/img/Rave@2x.png" alt="" />
+                    <img src="/static/rave-logo.svg" alt="" />
                 </div>
                 <div className={style.gridColumn}>
                     <header className={style.footerHeading}>
@@ -85,22 +85,22 @@ const Footer = () => (
                 <ul className={style.socialMenu}>
                     <li>
                         <a href="">
-                            <img src="./assets/img/google-plus.svg" alt="" />
+                            <img src="/static/google-plus.svg" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="./assets/img/twitter.svg" alt="" />
+                            <img src="/static/twitter.svg" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="./assets/img/facebook.svg" alt="" />
+                            <img src="/static/facebook.svg" alt="" />
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="./assets/img/instagram.svg" alt="" />
+                            <img src="/static/instagram.svg" alt="" />
                         </a>
                     </li>
                 </ul>

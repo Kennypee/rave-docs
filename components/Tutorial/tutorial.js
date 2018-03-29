@@ -11,7 +11,9 @@ const Tutorial = () => (
 
             <div className={style.gridContainer}>
                 <div class={style.gridColumn}>
-                    <div className={style.tutorialImage}></div>
+                    <div className={style.tutorialImage}>
+                        <img src="/static/vue.svg" alt="tutorial" />
+                    </div>
                     <div className={style.tutorialContent}>
                         <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
                         <p>
@@ -24,7 +26,9 @@ const Tutorial = () => (
                     </div>
                 </div>
                 <div class={style.gridColumn}>
-                    <div className={style.tutorialImage}></div>
+                    <div className={style.tutorialImage}>
+                        <img src="/static/vue.svg" alt="tutorial" />
+                    </div>
                     <div className={style.tutorialContent}>
                         <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
                         <p>
@@ -37,7 +41,9 @@ const Tutorial = () => (
                     </div>
                 </div>
                 <div class={style.gridColumn}>
-                    <div className={style.tutorialImage}></div>
+                    <div className={style.tutorialImage}>
+                        <img src="/static/vue.svg" alt="tutorial" />
+                    </div>
                     <div className={style.tutorialContent}>
                         <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
                         <p>
@@ -50,7 +56,9 @@ const Tutorial = () => (
                     </div>
                 </div>
                 <div class={style.gridColumn}>
-                    <div className={style.tutorialImage}></div>
+                    <div className={style.tutorialImage}>
+                        <img src="/static/vue.svg" alt="tutorial" />
+                    </div>
                     <div className={style.tutorialContent}>
                         <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
                         <p>
@@ -63,7 +71,9 @@ const Tutorial = () => (
                     </div>
                 </div>
                 <div class={style.gridColumn}>
-                    <div className={style.tutorialImage}></div>
+                    <div className={style.tutorialImage}>
+                        <img src="/static/vue.svg" alt="tutorial" />
+                    </div>
                     <div className={style.tutorialContent}>
                         <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
                         <p>
@@ -76,7 +86,9 @@ const Tutorial = () => (
                     </div>
                 </div>
                 <div class={style.gridColumn}>
-                    <div className={style.tutorialImage}></div>
+                    <div className={style.tutorialImage}>
+                        <img src="/static/vue.svg" alt="tutorial" />
+                    </div>
                     <div className={style.tutorialContent}>
                         <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
                         <p>
