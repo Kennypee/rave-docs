@@ -81,7 +81,7 @@ const Footer = () => (
         </div>
         <div className={style.footerBottom}>
             <div className={style.container}>
-                <span>&copy; 2017 Rave Documentation</span>
+                <span>&copy; 2018 Rave Documentation</span>
                 <ul className={style.socialMenu}>
                     <li>
                         <a href="">
