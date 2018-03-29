@@ -1,6 +1,7 @@
 const withSass = require('@zeit/next-sass');
 const webpack = require('webpack');
 const path = require('path');
+const neat = require('bourbon-neat');
 
 module.exports = withSass({
     cssModules: true,
@@ -12,9 +13,9 @@ module.exports = withSass({
     sassLoaderOptions: {
         includePaths: [
             './assets/styles',
-            require('bourbon-neat').includePaths,
+            neat.includePaths,
 
-        ]
+        ],
     },
 
     webpack(config, options) {

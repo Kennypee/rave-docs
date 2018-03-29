@@ -1,0 +1,49 @@
+@import 'global';
+
+.tutorial{
+    text-align: center;
+    margin-top: 180px;
+
+    h2{
+        font-weight: $font-semi-bold;
+    }
+
+    p{
+        margin: 20px auto;
+        max-width: 500px;
+    }
+
+    .gridContainer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .gridColumn{
+            width: 330px;
+            margin-top: 30px;
+            box-shadow: 0px 1.2px 5.6px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    &Image{
+        width: 100%;
+        height: 200px;
+        background-color: #f1f1f1;
+    }
+    &Content{
+        text-align: left;
+        padding: 20px;
+
+        h4{
+            font-weight: $font-bold;
+        }
+    }
+    &Link{
+        padding: 20px 0;
+        background-color: $tutorial-footer-bg;
+
+        a{
+            color: $tutorial-footer-text;
+        }
+    }
+}

@@ -1,8 +1,26 @@
 @import 'colors';
 @import 'neat';
 
+// global variables
+$container-width: 1024px;
+$font-family: 'Nunito', sans-serif;
+$font-semi-bold: 600;
+$font-bold: 700;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
+}
+body{
+    font-family: $font-family;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: $container-width;
+    margin: 0 auto;
 }

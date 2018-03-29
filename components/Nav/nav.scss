@@ -1,0 +1,45 @@
+@import 'global';
+
+.nav{
+    width: 100%;
+    font-size: 14px;
+
+    &Top, &Bottom{
+        overflow: hidden;
+
+        ul{
+            display: inline-block;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+            line-height: 50px;
+            vertical-align: middle;
+            padding: 0 15px;
+
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+
+        .pullRight{
+            float: right;
+        }
+    }
+
+    &Top{
+        color: $white;
+        border-bottom: 1px solid rgba($header-line,.2);
+        text-transform: uppercase;
+
+        
+    }
+
+    &Bottom{
+        
+    }    
+}

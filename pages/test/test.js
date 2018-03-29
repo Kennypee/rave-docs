@@ -1,13 +1,19 @@
 import React from "react";
-import Header from "components/header";
-import Home from "components/Home";
+import Head from "components/head";
+import Header from "components/Header";
+import Tutorial from 'components/Tutorial';
+import Slack from 'components/Slack';
+import Footer from 'components/Footer';
 
 class Test extends React.Component{
     render(){
         return (
             <React.Fragment>
+            <Head />
             <Header />
-            <Home />
+            <Tutorial />
+            <Slack />
+            <Footer />
             </React.Fragment>
         );
     }
