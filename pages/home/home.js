@@ -5,7 +5,7 @@ import Tutorial from 'components/Tutorial';
 import Slack from 'components/Slack';
 import Footer from 'components/Footer';
 
-class Test extends React.Component{
+class Home extends React.Component{
     render(){
         return (
             <React.Fragment>
@@ -19,4 +19,4 @@ class Test extends React.Component{
     }
 }
 
-export default Test;
+export default Home;
