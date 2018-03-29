@@ -6,8 +6,8 @@ const Nav = () => (
     <nav className={style.nav}>
         <div className={style.container}>
             <div className={style.navTop}>
-                <a href="">
-                    
+                <a href="" className={style.brand}>
+                    <img src="/static/flutterwave-logo.svg" alt="Flutterwave" />
                 </a>
                 <ul>
                     <li class={style.list}>Solutions</li>
@@ -21,8 +21,8 @@ const Nav = () => (
                 </ul>
             </div>
             <div className={style.navBottom}>
-                <a href="">
-                    <img src="img/flutterwave-logo.svg" alt="" />
+                <a href="" className={style.brand}>
+                    <img src="/static/rave.svg" alt="Flutterwave" />
                 </a>
                 <ul className={style.pullRight}>
                     <li>Pricing</li>

@@ -3,6 +3,7 @@ import style from './slack.scss'
 const Slack = () => (
     <section className={style.slack}>
         <div className={style.container}>
+            <img src="/static/slack.svg" alt=""/>
             <p>Join our Growing Slack Channel to connect with 
                 other smart developers like you!
             </p>

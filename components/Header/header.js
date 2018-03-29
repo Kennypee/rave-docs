@@ -15,10 +15,17 @@ const Header = () => (
 
             <div className={style.gridContainer}>
                 <div class={style.gridColumn}>
-                    <Icon name="web" />
+                <img src="/static/web.svg" alt="tutorial"/>
+                <h4>Web</h4>
                 </div>
-                <div class={style.gridColumn}></div>
-                <div class={style.gridColumn}></div>
+                <div class={style.gridColumn}>
+                <img src="/static/ios.svg" alt="tutorial"/>
+                <h4>Apple iOS</h4>
+                </div>
+                <div class={style.gridColumn}>
+                <img src="/static/android.svg" alt="tutorial"/>
+                <h4>Android</h4>
+                </div>
             </div>
         </div>
     </section>

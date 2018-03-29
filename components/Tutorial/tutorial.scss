@@ -2,7 +2,10 @@
 
 .tutorial{
     text-align: center;
-    margin-top: 180px;
+    padding: 180px 0 100px 0;
+    background: url(/static/tutorials-polygon.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
     h2{
         font-weight: $font-semi-bold;
@@ -27,19 +30,24 @@
 
     &Image{
         width: 100%;
-        height: 200px;
         background-color: #f1f1f1;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
     &Content{
         text-align: left;
         padding: 20px;
+        background-color: $white;
 
         h4{
             font-weight: $font-bold;
         }
     }
     &Link{
-        padding: 20px 0;
+        padding: 15px 0;
         background-color: $tutorial-footer-bg;
 
         a{
