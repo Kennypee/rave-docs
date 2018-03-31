@@ -6,7 +6,12 @@
     background-color: $sidebar-bg;
     
     .brand{
-        padding: 10px 50px;
+        padding: 0 50px;
+        line-height: 45px;
+
+        img{
+            vertical-align: middle;
+        }
     }
 
     .menu{

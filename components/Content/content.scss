@@ -3,4 +3,47 @@
 .content{
     width: 80%;
     background-color: $doc-bg;
+
+    .nav{
+        width: 100%;
+        font-size: 14px;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba($doc-nav-border, 0.2);
+        color: $doc-nav;
+        overflow: hidden;
+
+        .searchForm{
+            display: inline-block;
+            vertical-align: middle;
+
+            input[type='text']{
+                min-width: 300px;
+                height: 45px;
+                border: 0;
+                outline: none;
+                background: transparent;
+            }
+        }
+
+        ul{
+            display: inline-block;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+            line-height: 45px;
+            vertical-align: middle;
+            padding: 0 20px;
+
+            img{
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+
+        .pullRight{
+            float: right;
+        }
+    }
 }
