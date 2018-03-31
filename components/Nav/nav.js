@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './nav.scss';
 import Icon from 'components/Icon';
 
