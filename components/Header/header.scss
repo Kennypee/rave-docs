@@ -29,28 +29,6 @@
             border-radius: 20px;
             font-size: 14px;        
         }
-
-        .gridContainer{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-        }
-
-        .gridColumn{
-            width: 32%;
-            height: 200px;
-            background-color: $white;
-            box-shadow: 0 2px 6px rgba($black, 0.2);
-            color: $black;
-
-            img{
-                margin-top: 30px;
-            }
-
-            h4{
-                margin-top: 20px;
-            }
-        }
     }
 }
+

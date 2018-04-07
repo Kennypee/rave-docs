@@ -1,0 +1,16 @@
+<svg width="1440" height="190" viewBox="0 0 1440 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Path 2 Copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(171 -1284)">
+<g id="Path 2 Copy">
+<use xlink:href="#path0_fill" transform="matrix(-1 -8.52808e-17 1.75861e-16 -1 1576 1473.73)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-12.0772 242.209 2.17869 0.0160706 711.461 -13.6115)">
+<stop offset="0.016278" stop-color="#FFFFFF" stop-opacity="0.17"/>
+<stop offset="1" stop-color="#778BE5"/>
+</linearGradient>
+<path id="path0_fill" fill-rule="evenodd" d="M 62.4253 189.413C 62.4253 189.413 505.633 166.894 784.844 166.133C 1064.05 165.372 1100.78 191.122 1346.19 185.913C 1591.61 180.703 1989.99 144.156 1989.99 144.156L 2010 4.72108L 0 0L 62.4253 189.413Z"/>
+</defs>
+</svg>
