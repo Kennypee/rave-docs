@@ -1,0 +1,18 @@
+.breadCrumb {
+
+    li {
+        list-style: none;
+        display: inline-block;
+        font-size: 12px;
+        padding-left: 20px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:not(:last-child):after {
+            content: '/';
+            padding-left: 20px;
+        }
+    }
+}

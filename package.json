@@ -18,6 +18,8 @@
     "next": "^5.1.0",
     "node-sass": "^4.8.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.2.0",
+    "react-notifications": "^1.4.3"
   }
 }

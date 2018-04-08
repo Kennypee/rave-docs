@@ -3,6 +3,22 @@ import Head from "components/head";
 import style from './index.scss'
 export default class Index extends React.Component {
 
+    _renderChevronSVG() {
+        return (
+            <svg width="8" height="12" viewBox="0 0 8 12" version="1.1">
+                <title>Shape</title>
+                <g id="Canvas" transform="translate(-160 -702)">
+                    <g id="Shape">
+                        <use href="#path0_fill" transform="translate(160 702)" fill="#5461C0"/>
+                    </g>
+                </g>
+                <defs>
+                    <path id="path0_fill" fill-rule="evenodd" d="M 1.4 0L 0 1.4L 4.6 6L 0 10.6L 1.4 12L 7.4 6L 1.4 0Z" />
+                </defs>
+            </svg>
+        );
+    }
+
     renderPlatform() {
         return (
             <section className={style.platform}>
@@ -48,8 +64,9 @@ export default class Index extends React.Component {
                                 </p>
                             </div>
                             <div className={style.guidesLink}>
-                                <a href="">See More
-                                    {/* TODO: add chevron-right.svg */}
+                                <a href="">
+                                    See More
+                                    {this._renderChevronSVG()}
                                 </a>
                             </div>
                         </div>
@@ -65,8 +82,9 @@ export default class Index extends React.Component {
                                 </p>
                             </div>
                             <div className={style.guidesLink}>
-                                <a href="">See More
-                                {/* TODO: add chevron-right.svg */}
+                                <a href="">
+                                    See More
+                                    {this._renderChevronSVG()}
                                 </a>
                             </div>
                         </div>
@@ -82,8 +100,9 @@ export default class Index extends React.Component {
                                 </p>
                             </div>
                             <div className={style.guidesLink}>
-                                <a href="">See More
-                                {/* TODO: add chevron-right.svg */}
+                                <a href="">
+                                    See More
+                                    {this._renderChevronSVG()}
                                 </a>
                             </div>
                         </div>
@@ -105,7 +124,7 @@ export default class Index extends React.Component {
                     <div className={style.gridContainer}>
                         <div class={style.gridColumn}>
                             <div className={style.tutorialImage}>
-                                <img src="/static/" alt="tutorial" />
+                                {/* TODO: add image here */}
                             </div>
                             <div className={style.tutorialContent}>
                                 <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
@@ -120,7 +139,7 @@ export default class Index extends React.Component {
                         </div>
                         <div class={style.gridColumn}>
                             <div className={style.tutorialImage}>
-                                <img src="/static/" alt="tutorial" />
+                                {/* TODO: add image here */}
                             </div>
                             <div className={style.tutorialContent}>
                                 <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
@@ -135,7 +154,7 @@ export default class Index extends React.Component {
                         </div>
                         <div class={style.gridColumn}>
                             <div className={style.tutorialImage}>
-                                <img src="/static/" alt="tutorial" />
+                                {/* TODO: add image here */}
                             </div>
                             <div className={style.tutorialContent}>
                                 <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
@@ -150,7 +169,7 @@ export default class Index extends React.Component {
                         </div>
                         <div class={style.gridColumn}>
                             <div className={style.tutorialImage}>
-                                <img src="/static/" alt="tutorial" />
+                                {/* TODO: add image here */}
                             </div>
                             <div className={style.tutorialContent}>
                                 <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
@@ -165,7 +184,7 @@ export default class Index extends React.Component {
                         </div>
                         <div class={style.gridColumn}>
                             <div className={style.tutorialImage}>
-                                <img src="/static/" alt="tutorial" />
+                                {/* TODO: add image here */}
                             </div>
                             <div className={style.tutorialContent}>
                                 <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
@@ -180,7 +199,7 @@ export default class Index extends React.Component {
                         </div>
                         <div class={style.gridColumn}>
                             <div className={style.tutorialImage}>
-                                <img src="/static/" alt="tutorial" />
+                                {/* TODO: add image here */}
                             </div>
                             <div className={style.tutorialContent}>
                                 <h4>Building a complete checkout system using Rave, Vuejs & Nodejs</h4>
@@ -259,7 +278,7 @@ export default class Index extends React.Component {
                     <img src="/static/left-bg.svg" />
                 </div>
                 <div className={style.headerBgRight}>
-                <img src="/static/right-bg.svg" />
+                    <img src="/static/right-bg.svg" />
                 </div>
             </section>
         );

@@ -4,6 +4,7 @@
     width: 20%;
     min-height: 100vh;
     background-color: $sidebar-bg;
+    border-right: 1px solid $sidebar-menu-border;
     
     .brand{
         padding: 0 50px;
@@ -16,7 +17,6 @@
 
     .menu{
         padding: 50px;
-        border-right: 1px solid $sidebar-menu-border;
 
         .back{
             display: block;

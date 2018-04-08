@@ -1,5 +1,6 @@
 import style from './content.scss';
 import Code from 'components/Code';
+import BreadCrumb from 'components/Breadcrumb';
 
 const content = `var payload = {
     "cardno": "5438898014560229",
@@ -20,6 +21,17 @@ const content = `var payload = {
     "device_fingerprint": "69e6b7f0b72037aa8428b70fbe03986c"
 };`;
 
+const history = [
+    {
+        title: 'Home',
+        url: 'https://home'
+    },
+    {
+        title: 'Web Getting Started',
+        url: 'https://web'
+    },
+];
+
 
 const Content = () => (
     <div className={style.content}>
@@ -37,7 +49,10 @@ const Content = () => (
             </ul>
         </div>
 
-        <Code content={content} />
+        <div className={style.contentBody}>
+            <BreadCrumb history={history} />
+            <Code content={content} />
+        </div>
     </div>
 );
 

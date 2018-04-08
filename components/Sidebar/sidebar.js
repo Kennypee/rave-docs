@@ -2,11 +2,6 @@ import style from './sidebar.scss';
 
 const Sidebar = () => (
     <div className={style.sidebar}>
-        <div className={style.brand}>
-            <a href="">
-                <img src="/static/rave.svg" alt=""/>
-            </a>
-        </div>
         <div className={style.menu}>
             <a href="" className={style.back}>
                 <img src="/static/chevron-left.svg" alt=""/>
