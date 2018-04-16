@@ -14,19 +14,19 @@ export default class Analytics extends React.Component {
                     <div className={style.gridContainer}>
                         <div className={style.gridColumn}>
                             <img src="/static/react.svg" alt="" />
-                            <h4>ReactJs</h4>
+                            <h5>ReactJs</h5>
                         </div>
                         <div className={style.gridColumn}>
                             <img src="/static/angular.svg" alt="" />
-                            <h4>AngularJs</h4>
+                            <h5>AngularJs</h5>
                         </div>
                         <div className={style.gridColumn}>
                             <img src="/static/vue-logo.svg" alt="" />
-                            <h4>VueJs</h4>
+                            <h5>VueJs</h5>
                         </div>
                         <div className={style.gridColumn}>
                             <img src="/static/nodejs.svg" alt="" />
-                            <h4>NodeJs</h4>
+                            <h5>NodeJs</h5>
                         </div>
                     </div>
                 </div>
@@ -35,15 +35,15 @@ export default class Analytics extends React.Component {
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
                         <img src="/static/android-black.svg" alt="" />
-                        <h4>Android</h4>
+                        <h5>Android</h5>
                     </div>
                     <div className={style.gridColumn}>
                         <img src="/static/ios-black.svg" alt="" />
-                        <h4>Apple</h4>
+                        <h5>Apple</h5>
                     </div>
                     <div className={style.gridColumn}>
                         <img src="/static/cordova.svg" alt="" />
-                        <h4>Cordova</h4>
+                        <h5>Cordova</h5>
                     </div>
                     <div className={style.gridColumn}>
                         
@@ -54,19 +54,19 @@ export default class Analytics extends React.Component {
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
                         <img src="/static/php.svg" alt="" />
-                        <h4>PHP SDK</h4>
+                        <h5>PHP SDK</h5>
                     </div>
                     <div className={style.gridColumn}>
                         <img src="/static/golang.svg" alt="" />
-                        <h4>GO</h4>
+                        <h5>GO</h5>
                     </div>
                     <div className={style.gridColumn}>
                         <img src="/static/woocommerce.svg" alt="" />
-                        <h4>Woo commerce</h4>
+                        <h5>Woo commerce</h5>
                     </div>
                     <div className={style.gridColumn}>
                         <img src="/static/wordpress.svg" alt="" />
-                        <h4>Wordpress</h4>
+                        <h5>Wordpress</h5>
                     </div>
                 </div>
 

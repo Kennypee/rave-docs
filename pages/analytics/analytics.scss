@@ -140,14 +140,15 @@ body{
         border: 0;
         border-radius: 3px;
         padding: 0 20px;
+        background-color: #fff;
     }
 
-    &>h4{
+    & h4{
         margin: 26px 0 16px;
         font-weight: normal;
     }
 
-    &>h5{
+    & h5{
         margin: 80px 0 10px;
     }
 
@@ -159,6 +160,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin-bottom: 50px;
     }
 
     .gridColumn{
@@ -176,7 +178,7 @@ body{
             display: block;
         }
 
-        h4{
+        h5{
             font-weight: normal;
             margin-top: 12px;
         }
