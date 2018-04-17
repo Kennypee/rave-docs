@@ -40,6 +40,8 @@
                 vertical-align: middle;
                 margin-right: 10px;
             }
+
+            // TODO: fix the right border here
         }
 
         .pullRight{
@@ -49,5 +51,38 @@
 
     &Body{
         padding: 20px 50px;
+    }
+
+    // TODO: refactor the duplicated styles in a style to be extended
+    .unAuthenticatedBlock{
+        background-color: #FEECAA;
+        border: 1px solid #C4CDD5;
+        border-left: 4px solid #F7D754;
+        padding: 18px 24px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        max-width: 520px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .authButton {
+        float: right;
+        background-color: 0;
+        font-size: 12px;
+    }
+
+    .authenticatedBlock{
+        background-color: #BBE5B3;
+        border: 1px solid #C4CDD5;
+        border-left: 4px solid #B8E986;
+        max-width: 520px;
+        padding: 18px 24px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .authenticatedText{
+        margin-right: 15px;
     }
 }
