@@ -18,14 +18,14 @@ module.exports = withSass({
         ],
     },
 
-    webpack: (config, { buildId, dev, isServer, defaultLoaders }) => {
-        // Perform customizations to webpack config
-
-        // Important: return the modified config
+    webpack(config, { buildId, dev, isServer, defaultLoaders }) {
+        pagesExtensions: ['js', 'jsx', 'md']
+        config.resolve.alias['components'] = path.resolve(__dirname, 'components/')
+        config.resolve.alias['img'] = path.resolve(__dirname, 'assets/img/')
         config.module.rules.push({
-          test: /\.md$/,
-          use: [defaultLoaders.babel, '@mdx-js/loader']
-        });
+            test: /\.md$/,
+            use: [defaultLoaders.babel, '@mdx-js/loader']
+        })
         return config;
     },
     webpackDevMiddleware: config => {
@@ -35,3 +35,4 @@ module.exports = withSass({
         return config;
     }
 });
+  
