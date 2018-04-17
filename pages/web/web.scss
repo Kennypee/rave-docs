@@ -1,8 +1,12 @@
 @import 'global';
 
+body{
+    background-color: #F9FBFD;
+}
+
 .header{
     width: 100%;
-    height: 500px;
+    height: 400px;
     background: linear-gradient(1.32deg, #FAFBFC -53.28%, #576AE6 35.62%);
     margin: 0 auto;
 
@@ -59,7 +63,7 @@
 
         h2{
             font-weight: $font-semi-bold;
-            margin-top: 70px;
+            margin-top: 100px;
         }
 
         p{
@@ -72,7 +76,7 @@
             color: #2A3255;
             display: inline-block;
             padding: 10px 15px;
-            background-color: #8396E8;;
+            background-color: #8396E8;
             border-radius: 20px;
             font-size: 14px;        
         }
@@ -90,12 +94,6 @@
             background-color: $white;
             box-shadow: 0 2px 6px rgba($black, 0.2);
             color: $black;
-            transition: all .25s linear;
-            z-index: 3;
-
-            &:hover{
-                transform: scale(0.9);
-            }
 
             img{
                 margin-top: 30px;
@@ -116,81 +114,69 @@
     }
 }
 
-.intro{
-    background-color: #F5F5F7;
-    text-align: center;
-    padding: 250px 0 50px;
+.content{
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+
+    input{
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-radius: 3px;
+        padding: 0 20px;
+        background-color: #fff;
+    }
+
+    & h4{
+        margin: 26px 0 16px;
+        font-weight: normal;
+    }
+
+    .link{
+        color: #8396e8;
+    }
 
     .gridContainer{
-        width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
     }
 
     .gridColumn{
-        width: 48%;
-
-        p{
-            padding: 20px;
-        }
-
-        a{
-            color: #F5A623;
-        }
-    }
-}
-
-.tutorial{
-    text-align: center;
-    padding: 100px 0;
-
-
-    h2{
-        font-weight: $font-semi-bold;
-    }
-
-    p{
-        margin: 20px auto;
-        max-width: 500px;
-    }
-
-    .gridContainer{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        .gridColumn{
-            width: 330px;
-            margin-top: 30px;
-            box-shadow: 0px 1.2px 5.6px rgba(0, 0, 0, 0.12);
-        }
-    }
-
-    &Image{
         width: 100%;
-        background-color: #f1f1f1;
+        max-width: 140px;
+        height: 140px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px transparentize(#000000, 0.95);
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        // TODO: add a transition effect on hover
 
         img{
-            width: 100%;
-            height: 100%;
             display: block;
         }
-    }
-    &Content{
-        text-align: left;
-        padding: 20px;
-        background-color: $white;
 
-        h4{
-            font-weight: $font-bold;
+        h5{
+            font-weight: normal;
+            margin-top: 12px;
         }
     }
-    &Link{
-        padding: 15px 0;
-        background-color: $tutorial-footer-bg;
+    
+    &Footer{
+        margin: 80px 0 30px;
+        border-top: 1px solid #DFE2EB;
+        padding: 30px 0;
 
-        a{
-            color: $tutorial-footer-text;
+        &>p {
+            margin-top: 10px;
         }
     }
 }

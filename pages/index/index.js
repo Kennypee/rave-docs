@@ -34,8 +34,10 @@ export default class Index extends React.Component {
 
                     <div className={style.gridContainer}>
                         <div class={style.gridColumn}>
-                            <img src="/static/web.svg" alt="tutorial" />
-                            <h4>Web</h4>
+                            <a href="/web">
+                                <img src="/static/web.svg" alt="tutorial" />
+                                <h4>Web</h4>
+                            </a>
                         </div>
                         <div class={style.gridColumn}>
                             <img src="/static/ios.svg" alt="tutorial" />
