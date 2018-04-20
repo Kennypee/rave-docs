@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "components/head";
 import style from './index.scss'
+import Link from 'next/link'
 export default class Index extends React.Component {
 
     _renderChevronSVG() {
@@ -13,7 +14,7 @@ export default class Index extends React.Component {
                     </g>
                 </g>
                 <defs>
-                    <path id="path0_fill" fill-rule="evenodd" d="M 1.4 0L 0 1.4L 4.6 6L 0 10.6L 1.4 12L 7.4 6L 1.4 0Z" />
+                    <path id="path0_fill" fillRule="evenodd" d="M 1.4 0L 0 1.4L 4.6 6L 0 10.6L 1.4 12L 7.4 6L 1.4 0Z" />
                 </defs>
             </svg>
         );
@@ -23,23 +24,29 @@ export default class Index extends React.Component {
         return (
             <section className={style.platform}>
                 <div className={style.gridContainer}>
-                    <div class={style.gridColumn}>
-                        <a href="/getting-started-web">
-                            <img src="/static/web.svg" alt="tutorial" />
-                            <h4>Web</h4>
-                        </a>
+                    <div className={style.gridColumn}>
+                        <Link as="/guides/web" href="/web">
+                            <div>
+                                <img src="/static/web.svg" alt="tutorial" />
+                                <h4>Web</h4>
+                            </div>
+                        </Link>
                     </div>
-                    <div class={style.gridColumn}>
-                        <a href="">
-                            <img src="/static/ios.svg" alt="tutorial" />
-                            <h4>Apple iOS</h4>
-                        </a>
+                    <div className={style.gridColumn}>
+                        <Link as="/guides/ios" href="/ios">
+                            <div>
+                                <img src="/static/ios.svg" alt="tutorial" />
+                                <h4>Apple iOS</h4>
+                            </div>
+                        </Link>
                     </div>
-                    <div class={style.gridColumn}>
-                        <a href="">
-                            <img src="/static/android.svg" alt="tutorial" />
-                            <h4>Android</h4>
-                        </a>
+                    <div className={style.gridColumn}>
+                        <Link as="/guides/android" href="/android">
+                            <div>
+                                <img src="/static/android.svg" alt="tutorial" />
+                                <h4>Android</h4>
+                            </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -58,7 +65,7 @@ export default class Index extends React.Component {
                     </p>
 
                     <div className={style.gridContainer}>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.guidesImage}>
                                 <img src="/static/payment-101.svg" alt="tutorial" />
                             </div>
@@ -76,7 +83,7 @@ export default class Index extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.guidesImage}>
                                 <img src="/static/documentation.svg" alt="tutorial" />
                             </div>
@@ -94,7 +101,7 @@ export default class Index extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.guidesImage}>
                                 <img src="/static/apis.svg" alt="tutorial" />
                             </div>
@@ -128,7 +135,7 @@ export default class Index extends React.Component {
                     </p>
 
                     <div className={style.gridContainer}>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.tutorialImage}>
                                 {/* TODO: add image here */}
                             </div>
@@ -143,7 +150,7 @@ export default class Index extends React.Component {
                                 <a href="">Read More</a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.tutorialImage}>
                                 {/* TODO: add image here */}
                             </div>
@@ -158,7 +165,7 @@ export default class Index extends React.Component {
                                 <a href="">Read More</a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.tutorialImage}>
                                 {/* TODO: add image here */}
                             </div>
@@ -173,7 +180,7 @@ export default class Index extends React.Component {
                                 <a href="">Read More</a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.tutorialImage}>
                                 {/* TODO: add image here */}
                             </div>
@@ -188,7 +195,7 @@ export default class Index extends React.Component {
                                 <a href="">Read More</a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.tutorialImage}>
                                 {/* TODO: add image here */}
                             </div>
@@ -203,7 +210,7 @@ export default class Index extends React.Component {
                                 <a href="">Read More</a>
                             </div>
                         </div>
-                        <div class={style.gridColumn}>
+                        <div className={style.gridColumn}>
                             <div className={style.tutorialImage}>
                                 {/* TODO: add image here */}
                             </div>
@@ -252,7 +259,7 @@ export default class Index extends React.Component {
                                 <img src="/static/rave-white.svg" alt="Flutterwave" />
                             </a>
                             <ul>
-                                <li class={style.list}>Concepts</li>
+                                <li className={style.list}>Concepts</li>
                                 <li>Tutorials</li>
                                 <li>Documentations</li>
                                 <li>Blog</li>
