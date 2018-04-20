@@ -1,15 +1,18 @@
-import style from './nav.scss';
-import Icon from 'components/Icon';
+import style from './nav.scss'
+import Icon from 'components/Icon'
+import Link from 'next/link'
 
 const Nav = () => (
     <nav className={style.nav}>
         <div className={style.navTop}>
-            <a href="" className={style.brand}>
-                <img src="/static/rave-white.svg" alt="Flutterwave" />
-            </a>
+            <Link href="/">
+                <a className={style.brand}>
+                    <img src="/static/rave-white.svg" alt="Flutterwave" />
+                </a>
+            </Link>
             <ul>
-                <li class={style.list}>Concepts</li>
-                <li>Tutorials</li>
+                <li className={style.list}>Concepts</li>
+                <li><Link href="/tutorials"><a>Tutorials</a></Link></li>
                 <li>Documentations</li>
                 <li>Blog</li>
                 <li>Support</li>
