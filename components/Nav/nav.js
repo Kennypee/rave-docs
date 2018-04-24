@@ -1,13 +1,16 @@
 import style from './nav.scss';
+import Link from "next/link";
 import Icon from 'components/Icon';
 
 const Nav = () => (
     <nav className={style.nav}>
         <div className={style.container}>
             <div className={style.navTop}>
-                <a href="" className={style.brand}>
-                    <img src="/static/flutterwave-logo.svg" alt="Flutterwave" />
-                </a>
+                <Link href="/">
+                    <a className={style.brand}>
+                        <img src="/static/rave-white.svg" alt="Flutterwave" />
+                    </a>
+                </Link>
                 <ul>
                     <li class={style.list}>Solutions</li>
                     <li>Products</li>
@@ -15,11 +18,10 @@ const Nav = () => (
                     <li>Blog</li>
                 </ul>
                 <ul className={style.pullRight}>
-                    <li>Support</li>
-                    <li>Login</li>
+                    <li><a href="" className={style.navButton}>GET API KEYS</a></li>
                 </ul>
             </div>
-            <div className={style.navBottom}>
+            {/* <div className={style.navBottom}>
                 <a href="" className={style.brand}>
                     <img src="/static/rave.svg" alt="Flutterwave" />
                 </a>
@@ -29,7 +31,7 @@ const Nav = () => (
                     <li>Enterprise</li>
                     <li>Developers</li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     </nav>
 );

@@ -1,0 +1,111 @@
+@import 'global';
+
+body{
+    background-color: #e5e5e5;
+}
+
+.body{
+    width: 80%;
+    margin: 30px auto;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-top: 40px;
+        
+        .columnLeft{
+            width: 60%;
+
+            h4,h3{
+                font-weight: normal;
+            }
+
+            p{
+                margin-top: 20px;
+            }
+
+            .notice {
+                padding: 5px;
+                border: 0.5px solid #C4CDD5;
+                overflow: hidden;
+                border-radius: 3px;
+                margin-top: 50px;
+
+                .psBlock {
+                    background-color: #5F6CC7;
+                    color: $white;
+                    display: inline-block;
+                    height: 40px;
+                    float: left;
+                    margin-right: 10px;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    padding: 10px;
+                }
+            }
+
+            .guideBlock {
+                border-top: 1px solid #C4CDD5;
+                border-bottom: 1px solid #C4CDD5;
+                padding: 16px 0;
+                text-align: right;
+                margin-top: 40px;
+                color: #5F6CC7;
+
+                img{
+                    transform: rotate(180deg) translateY(-10%);
+                }
+            }
+
+            .questionBlock {
+                margin-top: 40px;
+
+                a {
+                    color: #5F6CC7;
+                }
+
+                img {
+                    transform: translateY(20%);
+                    margin: 0 5px 0 15px;
+                }
+            }  
+        }
+
+        .columnRight{
+            width: 30%;
+
+            .select {
+                display: inline-block;
+                height: 50px;
+                background: $white;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+                border: 0;
+                border-radius: 0px;
+                margin-bottom: 20px;
+                padding: 10px;
+
+                &>.imgOne{
+                    height: 30px;
+                    width: auto;
+                    vertical-align: middle;
+                }
+
+                span{
+                    margin: 0 50px 0 20px;
+                }
+            }
+
+            .contentList li{
+                font-size: 14px;
+                list-style: none;
+                padding-top: 10px;
+                color: #969696;
+                
+                &.active {
+                    color: black;
+                }
+            }
+        }
+    }
+}

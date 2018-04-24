@@ -1,29 +1,14 @@
 import React from "react";
 import Head from "components/head";
+import Nav from "components/Nav";
+import Link from "next/link";
 import style from './index.scss';
 
 export default class Index extends React.Component {
     _renderHeader() {
         return (
             <section className={style.header}>
-                <nav className={style.nav}>
-                    <div className={style.container}>
-                        <div className={style.navTop}>
-                            <a href="" className={style.brand}>
-                                <img src="/static/rave-white.svg" alt="Flutterwave" />
-                            </a>
-                            <ul>
-                                <li class={style.list}>Solutions</li>
-                                <li>Products</li>
-                                <li>Company</li>
-                                <li>Blog</li>
-                            </ul>
-                            <ul className={style.pullRight}>
-                                <li><a href="" className={style.headerButton}>GET API KEYS</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <Nav/>
                 <div className={style.container}>
                     <h2>Developers</h2>
                     <p>
@@ -34,22 +19,34 @@ export default class Index extends React.Component {
 
                     <div className={style.gridContainer}>
                         <div class={style.gridColumn}>
-                            <a href="/web">
-                                <img src="/static/web.svg" alt="tutorial" />
-                                <h4>Web</h4>
-                            </a>
+                            <Link href="/web">
+                                <a>
+                                    <img src="/static/web.svg" alt="tutorial" />
+                                    <h4>Web</h4>
+                                </a>
+                            </Link>
                         </div>
                         <div class={style.gridColumn}>
-                            <img src="/static/ios.svg" alt="tutorial" />
-                            <h4>Apple iOS</h4>
+                            <Link href="/ios">
+                                <a>
+                                    <img src="/static/ios.svg" alt="tutorial" />
+                                    <h4>Apple iOS</h4>
+                                </a>
+                            </Link>
                         </div>
                         <div class={style.gridColumn}>
-                            <img src="/static/android.svg" alt="tutorial" />
-                            <h4>Android</h4>
+                            <Link href="/android">
+                                <a>
+                                    <img src="/static/android.svg" alt="tutorial" />
+                                    <h4>Android</h4>
+                                </a>
+                            </Link>
                         </div>
 
                     </div>
-                    <a href="" className={style.headerButton}>SEE ALL INTEGRATIONS</a>
+                    <Link href="/integrations">
+                        <a className={style.headerButton}>SEE ALL INTEGRATIONS</a>
+                    </Link>
                 </div>
             </section>
         );

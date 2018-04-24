@@ -1,29 +1,13 @@
 import React from "react";
 import Head from "components/head";
-import style from './analytics.scss';
+import Nav from "components/Nav";
+import style from './integrations.scss';
 
 export default class Analytics extends React.Component {
     _renderHeader() {
         return (
             <section className={style.header}>
-                <nav className={style.nav}>
-                    <div className={style.container}>
-                        <div className={style.navTop}>
-                            <a href="" className={style.brand}>
-                                <img src="/static/rave-white.svg" alt="Flutterwave" />
-                            </a>
-                            <ul>
-                                <li class={style.list}>Solutions</li>
-                                <li>Products</li>
-                                <li>Company</li>
-                                <li>Blog</li>
-                            </ul>
-                            <ul className={style.pullRight}>
-                                <li><a href="" className={style.headerButton}>GET API KEYS</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <Nav />
                 <div className={style.container}>
                     <h2>What technology are you using for your app?</h2>
                     <p>
