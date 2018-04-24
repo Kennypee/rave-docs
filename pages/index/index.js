@@ -19,7 +19,7 @@ export default class Index extends React.Component {
 
                     <div className={style.gridContainer}>
                         <div class={style.gridColumn}>
-                            <Link href="/web">
+                            <Link as="/guides/web" href="/web">
                                 <a>
                                     <img src="/static/web.svg" alt="tutorial" />
                                     <h4>Web</h4>
@@ -27,7 +27,7 @@ export default class Index extends React.Component {
                             </Link>
                         </div>
                         <div class={style.gridColumn}>
-                            <Link href="/ios">
+                            <Link as="/guides/ios" href="/ios">
                                 <a>
                                     <img src="/static/ios.svg" alt="tutorial" />
                                     <h4>Apple iOS</h4>
@@ -35,7 +35,7 @@ export default class Index extends React.Component {
                             </Link>
                         </div>
                         <div class={style.gridColumn}>
-                            <Link href="/android">
+                            <Link as="/guides/android" href="/android">
                                 <a>
                                     <img src="/static/android.svg" alt="tutorial" />
                                     <h4>Android</h4>
