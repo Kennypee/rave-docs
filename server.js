@@ -20,24 +20,24 @@ app.prepare()
     app.render(req, res, actualPage, queryParams)
   })
 
-  server.get('/guides/ios', (req, res) => {
-    const actualPage = '/ios'
+  server.get('/guides/mobile', (req, res) => {
+    const actualPage = '/mobile'
     app.render(req, res, actualPage)
   })
 
-  server.get('/guides/ios/:section', (req, res) => {
-    const actualPage = '/ios/sections'
+  server.get('/guides/mobile/:section', (req, res) => {
+    const actualPage = '/mobile/sections'
     const queryParams = { section: req.params.section } 
     app.render(req, res, actualPage, queryParams)
   })
 
-  server.get('/guides/android', (req, res) => {
-    const actualPage = '/android'
+  server.get('/guides/api', (req, res) => {
+    const actualPage = '/api'
     app.render(req, res, actualPage)
   })
 
-  server.get('/guides/android/:section', (req, res) => {
-    const actualPage = '/android/sections'
+  server.get('/guides/api/:section', (req, res) => {
+    const actualPage = '/api/sections'
     const queryParams = { section: req.params.section } 
     app.render(req, res, actualPage, queryParams)
   })

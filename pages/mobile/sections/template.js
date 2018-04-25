@@ -1,7 +1,7 @@
-import Layout 	         from 'components/Layout';
-import style 	         from 'components/Layout/layout.scss';
-import Code 	         from 'components/Code';
-import {Android as Sidebar}  from 'components/InternalSidebar';
+import Layout            from 'components/Layout';
+import style             from 'components/Layout/layout.scss';
+import Code              from 'components/Code';
+import {iOS as Sidebar}  from 'components/InternalSidebar';
 
 const history = [
     {
@@ -10,7 +10,7 @@ const history = [
     },
     {
         title: 'Web Getting Started',
-        url: '/guides/android'
+        url: '/guides/ios'
     },
 ];
 
@@ -34,14 +34,10 @@ const codeContent = `var payload = {
 };`;
 
 const content =  
-	<div className={style.columnLeft}>
-        <h3>Android Getting Started</h3>
+    <div className={style.columnLeft}>
+        <h3>Getting Started with iOS</h3>
         <p>
-           With a lot of affordable high end mobile devices using the Android operating system, it only makes sense to build applications on Android’s platform. 
-        </p>
-        <p>
-           Thinking of how to integrate payments on your Android application? We’ll show you with our comprehensive APIs. You are one step away from getting the Rave experience on your Android device.
- 
+            With Rave, enabling payments on Apple’s flagship operating system has never been more seamless. Build and customize your application as you deem fit and take absolute control. With a number of endpoints, URLs and options to choose from, each having a detailed explanation as to how it works, we’ll have your business swinging from the fences in no time!
         </p>
 
         <Code content={codeContent} />
@@ -72,16 +68,16 @@ const content =
         </div>
     </div>
 
-export default class Android extends React.Component {
-	render() {
-		let props = {
-			history:history,
-			content:content,
-			sidebar:<Sidebar active=""/>
-		}
+export default class iOS extends React.Component {
+    render() {
+        let props = {
+            history:history,
+            content:content,
+            sidebar:<Sidebar active=""/>
+        }
         return (
             <Layout {...props}>
-            	
+                
             </Layout>
         );
     }

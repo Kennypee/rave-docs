@@ -12,7 +12,7 @@ const Nav = () => (
                     </a>
                 </Link>
                 <ul>
-                    <li class={style.list}>Solutions</li>
+                    <li className={style.list}>Solutions</li>
                     <li>Products</li>
                     <li>Company</li>
                     <li>Blog</li>

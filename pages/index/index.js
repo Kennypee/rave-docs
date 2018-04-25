@@ -27,24 +27,24 @@ export default class Index extends React.Component {
                             </Link>
                         </div>
                         <div class={style.gridColumn}>
-                            <Link as="/guides/ios" href="/ios">
+                            <Link as="/guides/mobile" href="/mobile">
                                 <a>
-                                    <img src="/static/ios.svg" alt="tutorial" />
-                                    <h4>Apple iOS</h4>
+                                    <img src="/static/android.svg" alt="tutorial" />
+                                    <h4>Mobile</h4>
                                 </a>
                             </Link>
                         </div>
                         <div class={style.gridColumn}>
-                            <Link as="/guides/android" href="/android">
+                            <Link as="/guides/api" href="/api">
                                 <a>
-                                    <img src="/static/android.svg" alt="tutorial" />
-                                    <h4>Android</h4>
+                                    <img src="/static/apis.svg" alt="tutorial" />
+                                    <h4>API Reference</h4>
                                 </a>
                             </Link>
                         </div>
 
                     </div>
-                    <Link href="/integrations">
+                    <Link href="/guides">
                         <a className={style.headerButton}>SEE ALL INTEGRATIONS</a>
                     </Link>
                 </div>
