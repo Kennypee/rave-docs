@@ -23,7 +23,6 @@ const Layout = ({content, sidebar}) => (
                     </div>
 
                     <div className={style.guideBlock}>
-                        <a href="">Read the Guide <img src="/static/chevron-left.svg" alt=""/></a>
                     </div>
 
                     <div className={style.questionBlock}>

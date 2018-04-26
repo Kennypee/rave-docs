@@ -1,55 +1,46 @@
-import Layout from 'components/Layout';
-import style             from 'components/Layout/layout.scss';
-import Code              from 'components/Code';
-import {iOS as Sidebar}  from 'components/InternalSidebar';
+import Layout from 'components/Layout'
 
-const history = [
-    {
-        title: 'Home',
-        url: '/'
-    },
-    {
-        title: 'Web Getting Started',
-        url: '/guides/ios'
-    },
-];
+export default class Section extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { component: Default };
+    }
+    componentDidMount(){
+        this.props.url.query.section
+        switch (this.props.url.query.section) {
+            case "react":
+                import("content/web/react").then(module => this.setState({ component: module.default }))
+                break;
+            case "vue":
+                import("content/web/vue").then(module => this.setState({ component: module.default }))
+                break;
+            case "angular":
+                import("content/web/angular").then(module => this.setState({ component: module.default }))
+                break;
+            case "node":
+                import("content/web/node").then(module => this.setState({ component: module.default }))
+                break;
+            case "php":
+                import("content/web/php").then(module => this.setState({ component: module.default }))
+                break;
+            case "go":
+                import("content/web/go").then(module => this.setState({ component: module.default }))
+                break;
+            case "woocommerce":
+                import("content/web/woocommerce").then(module => this.setState({ component: module.default }))
+                break;
+            case "wordpress":
+                import("content/web/wordpress").then(module => this.setState({ component: module.default }))
+                break;
+            default:
+                break;
+        }
+    }
 
-const codeContent = `var payload = {
-    "cardno": "5438898014560229",
-    "cvv": "789",
-    "expirymonth": "07",
-    "expiryyear": "18",
-    "currency": "NGN",
-    "pin": "7552",
-    "country": "NG",
-    "amount": "10",
-    "email": "user@example.com",
-    "phonenumber": "1234555",
-    "suggested_auth": "PIN",
-    "firstname": "user1",
-    "lastname": "user2",
-    "IP": "355426087298442",
-    "txRef": "MC-7663-YU",
-    "device_fingerprint": "69e6b7f0b72037aa8428b70fbe03986c"
-};`;
-
-const content =  
-    <div>
-        <h3>Getting Started with iOS</h3>
-        <p>
-            With Rave, enabling payments on Apple’s flagship operating system has never been more seamless. Build and customize your application as you deem fit and take absolute control. With a number of endpoints, URLs and options to choose from, each having a detailed explanation as to how it works, we’ll have your business swinging from the fences in no time!
-        </p>
-
-        <Code content={codeContent} />
-
-    </div>
-
-export default class Web extends React.Component {
 	render() {
+        const { component: Component } = this.state;
         let props = {
-            history:history,
-            content:content,
-            sidebar:<Sidebar active=""/>
+            content:<Component />
         }
         return (
             <Layout {...props}>
@@ -58,3 +49,7 @@ export default class Web extends React.Component {
         );
     }
 }
+
+const Default = () => (
+    <div></div>
+)

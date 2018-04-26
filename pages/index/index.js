@@ -19,32 +19,32 @@ export default class Index extends React.Component {
 
                     <div className={style.gridContainer}>
                         <div class={style.gridColumn}>
-                            <Link as="/guides/web" href="/web">
+                            <Link prefetch as="/guides/web" href="/web">
                                 <a>
                                     <img src="/static/web.svg" alt="tutorial" />
                                     <h4>Web</h4>
                                 </a>
                             </Link>
                         </div>
-                        <div class={style.gridColumn}>
-                            <Link as="/guides/mobile" href="/mobile">
+                        <div className={style.gridColumn}>
+                            <Link prefetch as="/guides/mobile" href="/mobile">
                                 <a>
                                     <img src="/static/android.svg" alt="tutorial" />
                                     <h4>Mobile</h4>
                                 </a>
                             </Link>
                         </div>
-                        <div class={style.gridColumn}>
-                            <Link as="/guides/api" href="/api">
+                        <div className={style.gridColumn}>
+                            {/* <Link prefetch as="/guides/api" href="/api"> */}
                                 <a>
                                     <img src="/static/apis.svg" alt="tutorial" />
                                     <h4>API Reference</h4>
                                 </a>
-                            </Link>
+                            {/*</Link>*/}
                         </div>
 
                     </div>
-                    <Link href="/guides">
+                    <Link prefetch href="/guides">
                         <a className={style.headerButton}>SEE ALL INTEGRATIONS</a>
                     </Link>
                 </div>

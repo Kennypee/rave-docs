@@ -44,7 +44,7 @@ export default class Mobile extends React.Component {
 
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
-                        <Link as="/guides/mobile/android" href="/mobile/sections?section=android">
+                        <Link prefetch as="/guides/mobile/android" href="/mobile/sections?section=android">
                             <a>
                                 <img src="/static/android-black.svg" alt="" />
                                 <h5>Android</h5>
@@ -52,7 +52,7 @@ export default class Mobile extends React.Component {
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link as="/guides/mobile/ios" href="/mobile/sections?section=ios">
+                        <Link prefetch as="/guides/mobile/ios" href="/mobile/sections?section=ios">
                             <a>
                                 <img src="/static/ios-black.svg" alt="" />
                                 <h5>iOS</h5>
@@ -60,7 +60,7 @@ export default class Mobile extends React.Component {
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link as="/guides/mobile/cordova" href="/mobile/sections?section=cordova">
+                        <Link prefetch as="/guides/mobile/cordova" href="/mobile/sections?section=cordova">
                             <a>
                                 <img src="/static/cordova.svg" alt="" />
                                 <h5>Cordova</h5>
@@ -68,7 +68,7 @@ export default class Mobile extends React.Component {
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link as="/guides/mobile/java" href="/mobile/sections?section=java">
+                        <Link prefetch as="/guides/mobile/java" href="/mobile/sections?section=java">
                             <a>
                                 <img src="/static/java.svg" alt="" />
                                 <h5>Java</h5>

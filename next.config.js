@@ -18,10 +18,22 @@ module.exports = withSass({
         ],
     },
 
-    webpack(config, options) {
-        config.resolve.alias['components'] = path.resolve(__dirname, 'components/');
-        config.resolve.alias['img'] = path.resolve(__dirname, 'assets/img/');
-
+    webpack(config, { buildId, dev, isServer, defaultLoaders }) {
+        pagesExtensions: ['js', 'jsx', 'md']
+        config.resolve.alias['components'] = path.resolve(__dirname, 'components/')
+        config.resolve.alias['content'] = path.resolve(__dirname, 'content/')
+        config.resolve.alias['img'] = path.resolve(__dirname, 'assets/img/')
+        config.module.rules.push({
+            test: /\.md$/,
+            use: [defaultLoaders.babel, '@mdx-js/loader']
+        })
         return config;
     },
+    webpackDevMiddleware: config => {
+        // Perform customizations to webpack dev middleware config
+
+        // Important: return the modified config
+        return config;
+    }
 });
+  

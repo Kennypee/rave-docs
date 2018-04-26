@@ -45,7 +45,7 @@ export default class Web extends React.Component {
                 <div className={style.jsBlock}>
                     <div className={style.gridContainer}>
                         <div className={style.gridColumn}>
-                            <Link as="/guides/web/react" href="/web/sections?section=react">
+                            <Link prefetch as="/guides/web/react" href="/web/sections?section=react">
                                 <a>
                                     <img src="/static/react.svg" alt="" />
                                     <h5>ReactJs</h5>
@@ -53,7 +53,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                             <Link as="/guides/web/angular" href="/web/sections?section=angular">
+                             <Link prefetch as="/guides/web/angular" href="/web/sections?section=angular">
                                 <a>
                                     <img src="/static/angular.svg" alt="" />
                                     <h5>AngularJs</h5>
@@ -61,7 +61,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                             <Link as="/guides/web/vue" href="/web/sections?section=vue">
+                             <Link prefetch as="/guides/web/vue" href="/web/sections?section=vue">
                                 <a>
                                     <img src="/static/vue-logo.svg" alt="" />
                                     <h5>VueJs</h5>
@@ -69,7 +69,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                             <Link as="/guides/web/nodejs" href="/web/sections?section=nodejs">
+                             <Link prefetch as="/guides/web/node" href="/web/sections?section=node">
                                 <a>
                                     <img src="/static/nodejs.svg" alt="" />
                                     <h5>NodeJs</h5>
@@ -77,7 +77,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            <Link as="/guides/web/php" href="/web/sections?section=php">
+                            <Link prefetch as="/guides/web/php" href="/web/sections?section=php">
                                 <a>
                                     <img src="/static/php.svg" alt="" />
                                     <h5>PHP SDK</h5>
@@ -85,7 +85,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            <Link as="/guides/web/go" href="/web/sections?section=go">
+                            <Link prefetch as="/guides/web/go" href="/web/sections?section=go">
                                 <a>
                                     <img src="/static/golang.svg" alt="" />
                                     <h5>GO</h5>
@@ -93,7 +93,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            <Link as="/guides/web/woocommerce" href="/web/sections?section=woocommerce">
+                            <Link prefetch as="/guides/web/woocommerce" href="/web/sections?section=woocommerce">
                                 <a>
                                     <img src="/static/woocommerce.svg" alt="" />
                                     <h5>Woo commerce</h5>
@@ -101,7 +101,7 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            <Link as="/guides/web/wordpress" href="/web/sections?section=wordpress">
+                            <Link prefetch as="/guides/web/wordpress" href="/web/sections?section=wordpress">
                                 <a>
                                     <img src="/static/wordpress.svg" alt="" />
                                     <h5>Wordpress</h5>

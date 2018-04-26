@@ -6,7 +6,7 @@ const Nav = () => (
     <nav className={style.nav}>
         <div className={style.container}>
             <div className={style.navTop}>
-                <Link href="/">
+                <Link prefetch href="/">
                     <a className={style.brand}>
                         <img src="/static/rave-white.svg" alt="Flutterwave" />
                     </a>
