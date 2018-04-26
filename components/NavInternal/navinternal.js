@@ -1,4 +1,4 @@
-import style from './nav.scss';
+import style from './navinternal.scss';
 import Link from "next/link";
 import Icon from 'components/Icon';
 
@@ -36,4 +36,4 @@ const NavInternal = () => (
     </nav>
 );
 
-export default Nav;
+export default NavInternal;

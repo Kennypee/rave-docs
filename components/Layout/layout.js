@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'components/head';
-import Nav from 'components/Nav';
+import Nav from 'components/NavInternal';
 import style from './layout.scss';
 
 
