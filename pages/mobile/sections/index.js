@@ -1,4 +1,5 @@
 import Layout from 'components/Layout'
+import style from 'content/style.scss';
 
 export default class Section extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class Section extends React.Component {
 	render() {
         const { component: Component } = this.state;
         let props = {
-            content:<Component />
+            content:<div className={style.markdown}><Component/></div>
         }
         return (
             <Layout {...props}>

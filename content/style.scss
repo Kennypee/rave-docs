@@ -1,0 +1,77 @@
+.markdown {
+	table {
+	    margin-top: 10px;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 10px;
+		background-color: rgba(232, 236, 242, 0.9);
+
+		th,
+		td {
+			border: 1px solid #C4CDD5;
+			padding: 0.5rem 1rem;
+			vertical-align: top;
+			a {
+				text-decoration: underline;
+				color: #576AE6;
+			}
+		}
+		
+		thead 
+		{
+			th {
+				vertical-align: bottom;
+			}
+		}
+
+		tbody + tbody {
+			border: 1px solid #7a7a7a;
+		}
+		tbody tr:nth-of-type(odd) {
+		    background-color: none;
+		}
+	}
+
+	pre {
+		margin: 1rem 0rem;
+	    width: 100%;
+	    padding: 10px;
+	    background-color: rgba(232, 236, 242, 0.6745);
+	    border: 1px solid #C4CDD5;
+	}
+
+	ul, ol {
+		margin-left: 1rem;
+		padding: 1rem;
+	    line-height: 22px;
+		li {
+			code {
+				padding: 0px 3px;
+	    		background-color: rgba(232, 236, 242, 0.6745);
+	    		border: 1px solid #C4CDD5;
+			}
+		}
+	}
+
+	p {
+		img {
+			max-width: 100%;
+		}
+		a {
+			text-decoration: underline;
+			color: #576AE6;
+		}
+		code {
+			padding: 0px 3px;
+    		background-color: rgba(232, 236, 242, 0.6745);
+    		border: 1px solid #C4CDD5;
+		}
+	}
+
+	h2 {
+		margin: 2rem 0rem 1rem 0rem;
+	}
+	h3 {
+		margin: 1.5rem 0rem 0.75rem 0rem;
+	}
+}

@@ -37,7 +37,7 @@ The first step is to sign up with Flutterwave for a Rave account. Below are the 
 
 
 
-# Create a Vue Application
+## Create a Vue Application
 
 The best way to integrate Vue to your Rave application would be to use Vue’s command line interface (CLI). To carry this out, navigate to your terminal and enter the following commands:
 
@@ -98,7 +98,7 @@ Alternatively,  you may use Yarn:
 
 
 
-# Setup Rave
+## Setup Rave
 
 Assuming you’ve signed up using a sandbox account, login to your **Ravepay** Dashboard and at the sidebar, click on **Setup Rave**.
 
@@ -252,7 +252,7 @@ Should your payment go through, this is what your sample callback response will 
 To view sample callback responses for other situations such as a failed response, a declined transaction, insufficient funds etc,  do check out this [gist](https://gist.github.com/fullstackmafia/117b6046f968e14dcf3f6693816b815f) on Github.
 
 
-## You’ve gotten paid, now what?
+### You’ve gotten paid, now what?
 
 Yaay!  You just completed integration. Complete some test transactions and guess what, on Rave you are live when you sign up, the only steps we need you to complete are these:
 
@@ -271,11 +271,8 @@ There are two (2) states your account is in.
 
 | INDIVIDUALS                                                                                                                  | BUSINESS (SOLE PROPRIETOR AND CORPORATE)                                                                                         | NGOs                                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| - 50k per transactions and 200k daily cumulative upon go-live
-- 500k per transaction and 500k daily cumulative upon approval | - 200k per transaction and 1mm daily cumulative upon go-live
-- 500k per transaction and unlimited daily cumulative upon approval | - 50k per transactions and 200k daily cumulative upon go-live
-- 500k per transaction and 500k daily cumulative upon approval |
-
+| 50k per transactions and 200k daily cumulative upon go-live | 200k per transaction and 1mm daily cumulative upon go-live | 50k per transactions and 200k daily cumulative upon go-live |
+| 500k per transaction and 500k daily cumulative upon approval | 500k per transaction and unlimited daily cumulative upon approval | 500k per transaction and 500k daily cumulative upon approval |
   
 2.  **Approved** :  Great your documents were approved. Your limits would be raised too, now it is time to start making the money. You can always email  `hi@flutterwavego.com`  requesting that your limit be raised if your business use case absolutely requires it. When sending an email be sure to include your account name on Rave and use case for raising limits. Thanks!
 
@@ -362,13 +359,12 @@ Below is sample code of how to implement server side verification using Node JS:
 If you would like to review the entire codebase of this integration, you can find it on [Github](https://github.com/flutterwave-dev/rave-vue).
 
 
-RELEVANT LINKS:     
+### RELEVANT LINKS:     
 
 [Get Paid Using a Hosted Page](/doc/Get-Paid-using-a-Hosted-Page-ek8TCZ5HjI4tZXMorsVuh)
+
 [Enhancing Security with Integrity Hashes](/doc/Enhancing-Security-with-Integrity-Hashes-LgqpXOGMw5i6vJgrzMTym)
 
-
-## 
 
 
 
