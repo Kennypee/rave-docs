@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server",
+    "dev": "node server.js",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
     "build": "next build"
@@ -13,11 +13,18 @@
   "author": "Tchalla-Engineering",
   "license": "ISC",
   "dependencies": {
+    "@mdx-js/mdx": "^0.7.1",
     "@zeit/next-sass": "^0.1.2",
     "bourbon-neat": "^1.9.0",
+    "express": "^4.16.3",
     "next": "^5.1.0",
     "node-sass": "^4.8.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.2.0",
+    "react-notifications": "^1.4.3"
+  },
+  "devDependencies": {
+    "@mdx-js/loader": "^0.7.0"
   }
 }
