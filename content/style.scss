@@ -1,5 +1,24 @@
 .markdown {
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 1rem 2rem;
+	box-shadow: 0px 1.2px rgba(0, 0, 0, 0.12);
+	margin-bottom: 2rem;
+	
+	h1 {
+		font-size: 40px;
+		line-height: 47px;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 28px;
+		margin: 2rem 0rem 1rem 0rem;
+	}
+
 	table {
+		display:block;
+		overflow-x: scroll;
 	    margin-top: 10px;
 		width: 100%;
 		max-width: 100%;
@@ -37,23 +56,37 @@
 	    width: 100%;
 	    padding: 10px;
 	    background-color: rgba(232, 236, 242, 0.6745);
-	    border: 1px solid #C4CDD5;
+	    border: 0.5px solid #C4CDD5;
 	}
 
 	ul, ol {
 		margin-left: 1rem;
 		padding: 1rem;
-	    line-height: 22px;
+	    line-height: 1.4;
 		li {
 			code {
 				padding: 0px 3px;
 	    		background-color: rgba(232, 236, 242, 0.6745);
-	    		border: 1px solid #C4CDD5;
+	    		border: 0.5px solid #C4CDD5;
 			}
+		}
+	}
+	
+	blockquote {
+		padding: 1rem;
+		padding-top: 0rem;
+		background-color: rgba(254, 236, 170, 0.4);
+		border: 0.5px solid #C4CDD5;
+		p {
+			line-height: 1.25;
+	    	font-size: 1rem;
+	    	font-style: italic;
 		}
 	}
 
 	p {
+	    line-height: 1.62;
+	    font-size: 1.125rem;
 		img {
 			max-width: 100%;
 		}
@@ -64,13 +97,10 @@
 		code {
 			padding: 0px 3px;
     		background-color: rgba(232, 236, 242, 0.6745);
-    		border: 1px solid #C4CDD5;
+    		border: 0.5px solid #C4CDD5;
 		}
 	}
 
-	h2 {
-		margin: 2rem 0rem 1rem 0rem;
-	}
 	h3 {
 		margin: 1.5rem 0rem 0.75rem 0rem;
 	}

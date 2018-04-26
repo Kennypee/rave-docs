@@ -15,7 +15,7 @@ body{
         margin-top: 40px;
         
         .columnLeft{
-            width: 60%;
+            width: 75%;
 
             h4,h3{
                 font-weight: normal;
@@ -73,7 +73,14 @@ body{
         }
 
         .columnRight{
-            width: 30%;
+            width: 23%;
+            float:right;
+
+            h4 {
+                color: #2A3255;
+                font-size: 21px;
+                line-height: 25px;
+            }
 
             .select {
                 display: inline-block;
@@ -97,7 +104,8 @@ body{
             }
 
             .contentList li{
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 19px;
                 list-style: none;
                 padding-top: 10px;
                 color: #969696;
@@ -106,6 +114,13 @@ body{
                     color: black;
                 }
             }
+        }
+        .fixed {
+            position: fixed; 
+            z-index: 1; 
+            top: 0; 
+            overflow-x: hidden; 
+            padding-top: 2rem;
         }
     }
 }

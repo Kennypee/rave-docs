@@ -251,11 +251,13 @@ There are two (2) states your account is in:
 
   
 1. **Pending**:  During this period you are allowed to start transacting with the limits given below. Your account is not setup for settlement till you fill/add a bank account and the details submitted are reviewed and approved.
+| INDIVIDUALS                                                                                                                  | BUSINESS (SOLE PROPRIETOR AND CORPORATE)                                                                                         | NGOs                                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| - 50k per transactions and 200k daily cumulative upon go-live
+- 500k per transaction and 500k daily cumulative upon approval | - 200k per transaction and 1mm daily cumulative upon go-live
+- 500k per transaction and unlimited daily cumulative upon approval | - 50k per transactions and 200k daily cumulative upon go-live
+- 500k per transaction and 500k daily cumulative upon approval |
 
-| INDIVIDUALS | BUSINESS (SOLE PROPRIETOR AND CORPORATE) | NGOs | 
-| ----------- |----------------------------------------- |-----|
-| 50k per transactions and 200k daily cumulative upon go-live | 200k per transaction and 1mm daily cumulative upon go-live | 50k per transactions and 200k daily cumulative upon go-live |
-| 500k per transaction and 500k daily cumulative upon approval| 500k per transaction and unlimited daily cumulative upon approval | 500k per transaction and 500k daily cumulative upon approval. |
   
 2.  **Approved** :  Great your documents were approved. Your limits would be raised too, now it is time to start making the money. You can always email  `hi@flutterwavego.com`  requesting that your limit be raised if your business use case absolutely requires it. When sending an email be sure to include your account name on Rave and use case for raising limits. Thanks!
 

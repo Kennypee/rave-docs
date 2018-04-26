@@ -93,7 +93,6 @@ Alternatively,  you may use Yarn:
     yarn add <NAME OF DEPENDENCY>
 ```
 
-![](/static/img/pixel.gif)
 
 
 
@@ -168,7 +167,7 @@ The `getPaidSetup` function needs a public key, this key serves as the link betw
 
 
 
-  **CAUTION**: The **public key** is used when embedding the pay button, it can be used on the **client page**. The **secret key** is very sensitive to your Rave account and should not be exposed to your **client page**. Do not commit your **secret key** to GitHub or any other versioning system and ensure you only use your **secret key** on the **server side**. Kindly re-read this paragraph. 
+>  **CAUTION**: The **public key** is used when embedding the pay button, it can be used on the **client page**. The **secret key** is very sensitive to your Rave account and should not be exposed to your **client page**. Do not commit your **secret key** to GitHub or any other versioning system and ensure you only use your **secret key** on the **server side**. Kindly re-read this paragraph. 
 
 After you have implemented the `getpaidSetup`  function in your code and your customers want to make payments to your account, they should see a modal similar to this:
 

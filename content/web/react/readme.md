@@ -21,9 +21,9 @@ By proceeding with this integration it is assumed that you have at least basic k
 2. React Router
 3. NodeJS and NPM
 
+<script src="https://gist.github.com/nisrulz/11c0d63428b108f10c83.js"></script>
 
-
-# Create A Rave Account
+## Create A Rave Account
 
 The first step is to sign up with Flutterwave for a Rave account. Below are the two types of accounts on the Rave platform and their descriptions.
 
@@ -40,11 +40,11 @@ The first step is to sign up with Flutterwave for a Rave account. Below are the 
 
 
 
-# Create a React Application
+## Create a React Application
 
 To create a React application, navigate to your terminal and input the following commands:
 
-CAUTION:     This procedure assumes you are familiar with and have installed the following:
+> CAUTION:     This procedure assumes you are familiar with and have installed the following:
 
 
 1. NodeJS
@@ -77,7 +77,7 @@ Alternatively,  you may use Yarn:
     yarn add <NAME OF DEPENDENCY>
 
 
-# Setup Rave
+## Setup Rave
 
 Assuming you’ve signed up using a sandbox account, login to your **Ravepay** Dashboard and at the 
 sidebar, click on **Setup Rave**.
@@ -154,7 +154,7 @@ After you have implemented the `getpaidSetup`  function in your code and your cu
 
 
 
-[EMBED CODEPEN DEMO HERE](https://codepen.io/fullstackmafia/pen/zWZzyp)
+[See a demo on codepen.io](https://codepen.io/fullstackmafia/pen/zWZzyp)
 
 
 Should your payment go through, this is what your sample callback response will look like:
@@ -247,11 +247,8 @@ There are two (2) states your account is in:
 
 | INDIVIDUALS                                                                                                                  | BUSINESS (SOLE PROPRIETOR AND CORPORATE)                                                                                         | NGOs                                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| - 50k per transactions and 200k daily cumulative upon go-live
-- 500k per transaction and 500k daily cumulative upon approval | - 200k per transaction and 1mm daily cumulative upon go-live
-- 500k per transaction and unlimited daily cumulative upon approval | - 50k per transactions and 200k daily cumulative upon go-live
-- 500k per transaction and 500k daily cumulative upon approval |
-
+50k per transactions and 200k daily cumulative upon go-live | 200k per transaction and 1mm daily cumulative upon go-live | 50k per transactions and 200k daily cumulative upon go-live
+500k per transaction and 500k daily cumulative upon approval | 500k per transaction and unlimited daily cumulative upon approval | 500k per transaction and 500k daily cumulative upon approval 
   
 2.  **Approved** :  Great your documents were approved. Your limits would be raised too, now it is time to start making the money. You can always email  `hi@flutterwavego.com`  requesting that your limit be raised if your business use case absolutely requires it. When sending an email be sure to include your account name on Rave and use case for raising limits. Thanks!
 
@@ -339,11 +336,12 @@ Below is sample code of how to implement server side verification using Node JS:
 If you would like to review the entire codebase of this integration, you can find it on [Github](https://github.com/flutterwave-dev/rave-react-demo).
 
 
-RELEVANT LINKS:     
+### RELEVANT LINKS:     
 
 [Get Paid Using a Hosted Page](/doc/Get-Paid-using-a-Hosted-Page-ek8TCZ5HjI4tZXMorsVuh)
+
 [Enhancing Security with Integrity Hashes](/doc/Enhancing-Security-with-Integrity-Hashes-LgqpXOGMw5i6vJgrzMTym)
 
 
-## 
+
 
