@@ -19,12 +19,15 @@ export default class Section extends React.Component {
                 break;
             case "ios":
                 import("content/mobile/ios").then(module => this.setState({ component: module.default }))
+                import("content/mobile/ios/routes.js").then(module => this.setState({ routes: module.default }))
                 break;
             case "cordova":
                 import("content/mobile/cordova").then(module => this.setState({ component: module.default }))
+                import("content/mobile/cordova/routes.js").then(module => this.setState({ routes: module.default }))
                 break;
-            case "java":
-                import("content/mobile/java").then(module => this.setState({ component: module.default }))
+            case "kotlin":
+                import("content/mobile/kotlin").then(module => this.setState({ component: module.default }))
+                import("content/mobile/kotlin/routes.js").then(module => this.setState({ routes: module.default }))
                 break;
             default:
                 break;
