@@ -44,34 +44,69 @@ export default class Others extends React.Component {
 
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/mobile/android" href="/mobile/sections?section=android">
+                        <Link prefetch as="/guides/others/joomla" href="/others/sections?section=joomla">
                             <a>
-                                <img src="/static/android-black.svg" alt="" />
-                                <h5>Android</h5>
+                                <img src="/static/joomla.svg" alt="" />
+                                <h5>Joomla</h5>
                             </a>
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/mobile/ios" href="/mobile/sections?section=ios">
+                        <Link prefetch as="/guides/others/prestashop" href="/others/sections?section=prestashop">
                             <a>
-                                <img src="/static/ios-black.svg" alt="" />
-                                <h5>iOS</h5>
+                                <img src="/static/prestashop.svg" alt="" />
+                                <h5>Prestashop</h5>
                             </a>
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/mobile/cordova" href="/mobile/sections?section=cordova">
+                        <Link prefetch as="/guides/others/woocommerce" href="/others/sections?section=woocommerce">
                             <a>
-                                <img src="/static/cordova.svg" alt="" />
-                                <h5>Cordova</h5>
+                                <img src="/static/woocommerce.svg" alt="" />
+                                <h5>Woocommerce</h5>
                             </a>
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/mobile/kotlin" href="/mobile/sections?section=kotlin">
+                        <Link prefetch as="/guides/others/wordpress" href="/others/sections?section=wordpress">
                             <a>
-                                <img src="/static/kotlin.svg" alt="" />
-                                <h5>Kotlin</h5>
+                                <img src="/static/wordpress.svg" alt="" />
+                                <h5>Wordpress</h5>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className={style.gridContainer}>
+                    <div className={style.gridColumn}>
+                        <Link prefetch as="/guides/others/hosted-page" href="/others/sections?section=hosted-page">
+                            <a>
+                                <img src="" alt="" />
+                                <h5>Hosted Page</h5>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={style.gridColumn}>
+                        <Link prefetch as="/guides/others/enhancing-security-with-integrity-hashes" href="/others/sections?section=enhancing-security-with-integrity-hashes">
+                            <a>
+                                <img src="" alt="" />
+                                <h5>Enhancing Security <br/>With Integrity <br/>Hashes</h5>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={style.gridColumn}>
+                        <Link prefetch as="/guides/others/server-side-validation-with-nodejs" href="/others/sections?section=server-side-validation-with-nodejs">
+                            <a>
+                                <img src="" alt="" />
+                                <h5>Server-Side <br />Validation With <br/>Nodejs</h5>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={style.gridColumn}>
+                        <Link>
+                            <a>
+                                <img src="" alt="" />
+                                <h5></h5>
                             </a>
                         </Link>
                     </div>

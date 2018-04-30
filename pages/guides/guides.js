@@ -188,6 +188,40 @@ export default class Guides extends React.Component {
                         </Link>
                     </div>
                 </div>
+                <div className={style.gridContainer}>
+                    <div className={style.gridColumn}>
+                        <Link prefetch as="/guides/others/hosted-page" href="/others/sections?section=hosted-page">
+                            <a>
+                                <img src="" alt="" />
+                                <h5>Hosted Page</h5>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={style.gridColumn}>
+                        <Link prefetch as="/guides/others/enhancing-security-with-integrity-hashes" href="/others/sections?section=enhancing-security-with-integrity-hashes">
+                            <a>
+                                <img src="" alt="" />
+                                <h5>Enhancing Security <br/>With Integrity <br/>Hashes</h5>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={style.gridColumn}>
+                        <Link prefetch as="/guides/others/server-side-validation-with-nodejs" href="/others/sections?section=server-side-validation-with-nodejs">
+                            <a>
+                                <img src="" alt="" />
+                                <h5>Server-Side <br />Validation With <br/>Nodejs</h5>
+                            </a>
+                        </Link>
+                    </div>
+                    <div className={style.gridColumn}>
+                        <Link>
+                            <a>
+                                <img src="" alt="" />
+                                <h5></h5>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
 
                 <div className={style.contentFooter}>
                     <h5>Need Help?</h5>
