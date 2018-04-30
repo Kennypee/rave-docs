@@ -1,0 +1,3 @@
+# Server Side Validation of Payments with NodeJS
+
+It’s equally important to verify that payments received from customers are successful with Rave before giving value to your customers. Although Rave inline does quite a good job of verifying the payment from the client side, we strongly recommend that you still perform a server side verification to further enhance and authenticate your payment flow. This section will guide you on how to properly validate transactions using NodeJS. Node JS is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code server-side.
