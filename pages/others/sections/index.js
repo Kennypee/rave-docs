@@ -29,6 +29,18 @@ export default class Section extends React.Component {
                 import("content/others/wordpress").then(module => this.setState({ component: module.default }))
                 import("content/others/wordpress/routes.js").then(module => this.setState({ routes: module.default }))
                 break;
+            case "hosted-page":
+                import("content/others/hosted-page").then(module => this.setState({ component: module.default }))
+                import("content/others/hosted-page/routes.js").then(module => this.setState({ routes: module.default }))
+                break;
+            case "enhancing-security-with-integrity-hashes":
+                import("content/others/enhancing-security-with-integrity-hashes").then(module => this.setState({ component: module.default }))
+                import("content/others/enhancing-security-with-integrity-hashes/routes.js").then(module => this.setState({ routes: module.default }))
+                break;
+            case "server-side-validation-with-nodejs":
+                import("content/others/server-side-validation-with-nodejs").then(module => this.setState({ component: module.default }))
+                import("content/others/server-side-validation-with-nodejs/routes.js").then(module => this.setState({ routes: module.default }))
+                break;
             default:
                 break;
         }
