@@ -1,12 +1,14 @@
 import React from 'react';
 import contentStyle from 'content/style.scss';
-import Intro from './parts/0.introduction.md'
-import CreateARaveAccount from './parts/1.create-a-rave-account.md'
-import CreateAReactApplication from './parts/2.create-a-react-application.md'
-import SetupRave from './parts/3.setup-rave.md'
-import WhatNext from './parts/4.what-next.md'
-import ServerSideValidation from './parts/5.server-side-validation-with-nodejs.md'
-import More from './parts/6.more.md'
+import Intro from './parts/introduction.md'
+import CreateAReactApplication from './parts/create-a-react-application.md'
+import SetupRave from './parts/setup-rave.md'
+
+// Shared components
+import CreateARaveAccount from './../_shared/create-a-rave-account.md'
+import WhatNext from './../_shared/what-next.md'
+import ServerSideValidation from './../_shared/server-side-validation-with-nodejs.md'
+import More from './../_shared/more.md'
 
 const Component = () => (
 	<React.Fragment>

@@ -1,12 +1,12 @@
 import React from 'react';
 import contentStyle from 'content/style.scss';
-import Intro from './parts/0.introduction.md'
-import Step1 from './parts/1.step1.md'
-import Step2 from './parts/2.step2.md'
-import Step3 from './parts/3.step3.md'
-import ModuleConfiguration from './parts/4.module-configuration.md'
-import Usage from './parts/5.usage.md'
-import More from './parts/6.more.md'
+import Intro from './parts/introduction.md'
+import Step1 from './parts/step1.md'
+import Step2 from './parts/step2.md'
+import Step3 from './parts/step3.md'
+import ModuleConfiguration from './parts/module-configuration.md'
+import Usage from './parts/usage.md'
+import More from './parts/more.md'
 
 const Component = () => (
 	<React.Fragment>

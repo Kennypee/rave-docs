@@ -1,0 +1,3 @@
+There!  Now you can make and receive payments on your WordPress site using Rave.  
+
+Should you have any questions to ask you can always reach out to us on our [Slack channel](https://flutterwavedevelopers.slack.com) or shoot us a mail at `integrationsupport@flutterwavego.com` .

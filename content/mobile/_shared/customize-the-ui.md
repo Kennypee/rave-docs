@@ -1,0 +1,19 @@
+## Customize the UI
+
+We understand the need for brand consistency so we are providing the `xml` style files for you to customize to match your brand or suit your taste:
+
+
+    <style name="DefaultTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="OTPButtonStyle">@style/otpBtnStyle</item>
+        <item name="PayButtonStyle">@style/payBtnStyle</item>
+        <item name="PinButtonStyle">@style/pinButtonStyle</item>
+        <item name="OTPHeaderStyle">@style/otpHeaderStyle</item>
+        <item name="TabLayoutStyle">@style/tabLayoutStyle</item>
+        <item name="PinHeaderStyle">@style/pinHeaderStyle</item>
+        <item name="SavedCardButtonStyle">@style/svdCardsBtnStyle</item>
+    </style>
+
+If however you’d like to use our style, in the `withTheme()` method of the `RavePayManager` class, set it to default: `.withTheme(R.style.``*DefaultTheme*``)`

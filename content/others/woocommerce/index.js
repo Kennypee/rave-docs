@@ -1,8 +1,8 @@
 import React from 'react';
 import contentStyle from 'content/style.scss';
-import Intro from './parts/0.introduction.md'
-import Integration from './parts/1.integration.md'
-import Configuration from './parts/2.configuring-your-plugin.md'
+import Intro from './parts/introduction.md'
+import Integration from './parts/integration.md'
+import Configuration from './parts/configuring-your-plugin.md'
 
 const Component = () => (
 	<React.Fragment>

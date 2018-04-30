@@ -1,0 +1,30 @@
+## Step 6: Components Configuration
+
+Click on **Components** and select **Rave Payments Forms** from the top menu. Then select the **Options** button at the top right side of the page.
+
+![Configuration button](https://cloud.githubusercontent.com/assets/8383666/22316729/6bf3dbfc-e36f-11e6-9b65-eb590894231d.png)
+
+This will open the Rave Payments Configuration Page where you then set the global configurations for your payment forms:
+
+![Configuration page](https://cloud.githubusercontent.com/assets/8383666/22316744/87e788b8-e36f-11e6-998a-62f819728faf.png)
+
+Here’s how you set up the configurations with the **Required** and **Optional** parameters:
+
+- **Public Key** - (**Required**) Your Rave Checkout public key which can be retrieved from "Rave Checkout" page on your Rave account dashboard.
+- **Secret Key** - (**Required**) Your Rave Checkout secret key which can be retrieved from "Rave Checkout" page on your Rave account dashboard.
+- **Secret Key** - (**Optional**) Choose to use the live account when you are ready to go live (Must be set to Yes for Production). Default: NO.
+- **Modal Title** - (**Optional**) Customize the title of the Pay Modal. Default is RAVE CHECKOUT.
+- **Modal Description** - (**Optional**) Customize the description on the Pay Modal. Default is RAVE. 
+
+### CHECKOUT MODAL
+
+- **Modal Logo** - (**Optional**) Customize the logo on the Pay Modal. Upload logo to media and select. Default is Rave logo.
+- **Success Redirect URL** - (**Optional**) The URL the user should be redirected to after a successful payment. Enter a full url (with 'http'). Default: "".
+- **Failed Redirect URL** - (**Optional**) The URL the user should be redirected to after a failed payment. Enter a full url (with 'http'). Default: "".
+- **Charge Currency** - (**Optional**) The currency the user is charged. Default: "NGN".
+- **Charge Country** - (**Optional**) The country the merchant is serving. Default: "NG: Nigeria".
+- **Disable module style** - (**Optional**) Disables styles from the module and uses template's style instead.
+- Click **Save & Close** to save your settings.
+
+### Styling
+You can enable activated template's style to override the form's default style from the **Component Configuration** page. Or you can override the *form* class `.flw-simple-pay-now-form` in your stylesheet.

@@ -1,0 +1,23 @@
+## You’ve gotten paid, now what?
+
+Yaay!  You just completed integration. Complete some test transactions and guess what? On Rave you are live when you sign up, the only steps we need you to complete are these:
+
+  1. Click on the  `Add account`  notification to add a bank account we can settle your funds into, along with a few other details that are required.
+  2. Once you complete this, you would see Live badge on your dashboard, hover over it, to see the limits set on your account.
+  
+**After I do this what is next ?**
+
+There are two (2) states your account is in:
+
+1. **Pending**:  During this period you are allowed to start transacting with the limits given below. Your account is not setup for settlement till you fill/add a bank account and the details submitted are reviewed and approved.
+
+| INDIVIDUALS | BUSINESS (SOLE PROPRIETOR AND CORPORATE) | NGOs | 
+| ----------- |----------------------------------------- |-----|
+| 50k per transactions and 200k daily cumulative upon go-live | 200k per transaction and 1mm daily cumulative upon go-live | 50k per transactions and 200k daily cumulative upon go-live |
+| 500k per transaction and 500k daily cumulative upon approval| 500k per transaction and unlimited daily cumulative upon approval | 500k per transaction and 500k daily cumulative upon approval |
+
+2.  **Approved** :  Great your documents were approved. Your limits would be raised too, now it is time to start making the money. You can always email  `hi@flutterwavego.com`  requesting that your limit be raised if your business use case absolutely requires it. When sending an email be sure to include your account name on Rave and use case for raising limits. Thanks!
+
+Now you are done integrating, to finesse that Integration and show your user's they can now pay with whatever they have `(card, account, USSD)`. You can add Rave’s image to your page as a branding asset to your payment options section.
+
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_8CA58C87BD82C742CD0884051C7ADAB3BACA5DC2CB44CB404AA1A0C3C4832142_1522338738016_8948ce7-Badge_1.png)

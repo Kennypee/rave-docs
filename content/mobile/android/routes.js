@@ -16,6 +16,10 @@ const Routes = [
         url: 'create-android-project'
     },
     {
+        title: 'Setup Rave',
+        url: 'setup-rave'
+    },
+    {
         title: 'Use Case',
         url: 'use-case'
     },
