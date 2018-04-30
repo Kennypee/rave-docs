@@ -31,6 +31,17 @@ app.prepare()
     app.render(req, res, actualPage, queryParams)
   })
 
+  server.get('/guides/others', (req, res) => {
+    const actualPage = '/others'
+    app.render(req, res, actualPage)
+  })
+
+  server.get('/guides/others/:section', (req, res) => {
+    const actualPage = '/others/sections'
+    const queryParams = { section: req.params.section } 
+    app.render(req, res, actualPage, queryParams)
+  })
+
   server.get('/guides/api', (req, res) => {
     const actualPage = '/api'
     app.render(req, res, actualPage)
