@@ -68,10 +68,10 @@ export default class Mobile extends React.Component {
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/mobile/java" href="/mobile/sections?section=java">
+                        <Link prefetch as="/guides/mobile/kotlin" href="/mobile/sections?section=kotlin">
                             <a>
-                                <img src="/static/java.svg" alt="" />
-                                <h5>Java</h5>
+                                <img src="/static/kotlin.svg" alt="" />
+                                <h5>Kotlin</h5>
                             </a>
                         </Link>
                     </div>
