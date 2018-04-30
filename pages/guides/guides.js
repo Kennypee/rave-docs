@@ -43,7 +43,7 @@ export default class Guides extends React.Component {
                 </form>
 
                 <div className={style.jsBlock}>
-                    <h4>Javascript</h4>
+                    <h4>Web</h4>
                     <div className={style.gridContainer}>
                         <div className={style.gridColumn}>
                             <Link prefetch as="/guides/web/react" href="/web/sections?section=react">
@@ -80,6 +80,43 @@ export default class Guides extends React.Component {
                     </div>
                 </div>
 
+                <div className={style.jsBlock}>
+                    <div className={style.gridContainer}>
+                        <div className={style.gridColumn}>
+                            <Link prefetch as="/guides/web/php" href="/web/sections?section=php">
+                                <a>
+                                    <img src="/static/php.svg" alt="" />
+                                    <h5>PHP</h5>
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={style.gridColumn}>
+                            <Link prefetch as="/guides/web/go" href="/web/sections?section=go">
+                                <a>
+                                    <img src="/static/golang.svg" alt="" />
+                                    <h5>GO</h5>
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={style.gridColumn}>
+                            <Link prefetch as="/guides/web/python" href="/web/sections?section=python">
+                                <a>
+                                    <img src="/static/python.svg" alt="" />
+                                    <h5>Python</h5>
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={style.gridColumn}>
+                            <Link prefetch as="/guides/web/csharp" href="/web/sections?section=csharp">
+                                <a>
+                                    <img src="/static/csharp.svg" alt="" />
+                                    <h5>C#</h5>
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+
                 <h4>Mobile SDK</h4>
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
@@ -107,10 +144,10 @@ export default class Guides extends React.Component {
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/mobile/java" href="/mobile/sections?section=java">
+                        <Link prefetch as="/guides/mobile/kotlin" href="/mobile/sections?section=kotlin">
                             <a>
-                                <img src="/static/java.svg" alt="" />
-                                <h5>Java</h5>
+                                <img src="/static/kotlin.svg" alt="" />
+                                <h5>Kotlin</h5>
                             </a>
                         </Link>
                     </div>
@@ -119,31 +156,31 @@ export default class Guides extends React.Component {
                 <h4>Others</h4>
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/web/php" href="/web/sections?section=php">
+                        <Link prefetch as="/guides/others/joomla" href="/others/sections?section=joomla">
                             <a>
-                                <img src="/static/php.svg" alt="" />
-                                <h5>PHP SDK</h5>
+                                <img src="/static/joomla.svg" alt="" />
+                                <h5>Joomla</h5>
                             </a>
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/web/go" href="/web/sections?section=go">
+                        <Link prefetch as="/guides/others/prestashop" href="/others/sections?section=prestashop">
                             <a>
-                                <img src="/static/golang.svg" alt="" />
-                                <h5>GO</h5>
+                                <img src="/static/prestashop.svg" alt="" />
+                                <h5>Prestashop</h5>
                             </a>
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/web/woocommerce" href="/web/sections?section=woocommerce">
+                        <Link prefetch as="/guides/others/woocommerce" href="/others/sections?section=woocommerce">
                             <a>
                                 <img src="/static/woocommerce.svg" alt="" />
-                                <h5>Woo commerce</h5>
+                                <h5>Woocommerce</h5>
                             </a>
                         </Link>
                     </div>
                     <div className={style.gridColumn}>
-                        <Link prefetch as="/guides/web/wordpress" href="/web/sections?section=wordpress">
+                        <Link prefetch as="/guides/others/wordpress" href="/others/sections?section=wordpress">
                             <a>
                                 <img src="/static/wordpress.svg" alt="" />
                                 <h5>Wordpress</h5>
