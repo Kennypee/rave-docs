@@ -80,7 +80,7 @@ export default class Web extends React.Component {
                             <Link prefetch as="/guides/web/php" href="/web/sections?section=php">
                                 <a>
                                     <img src="/static/php.svg" alt="" />
-                                    <h5>PHP SDK</h5>
+                                    <h5>PHP</h5>
                                 </a>
                             </Link>
                         </div>
@@ -93,18 +93,18 @@ export default class Web extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            <Link prefetch as="/guides/web/woocommerce" href="/web/sections?section=woocommerce">
+                            <Link prefetch as="/guides/web/python" href="/web/sections?section=python">
                                 <a>
-                                    <img src="/static/woocommerce.svg" alt="" />
-                                    <h5>Woo commerce</h5>
+                                    <img src="/static/python.svg" alt="" />
+                                    <h5>Python</h5>
                                 </a>
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            <Link prefetch as="/guides/web/wordpress" href="/web/sections?section=wordpress">
+                            <Link prefetch as="/guides/web/csharp" href="/web/sections?section=csharp">
                                 <a>
-                                    <img src="/static/wordpress.svg" alt="" />
-                                    <h5>Wordpress</h5>
+                                    <img src="/static/csharp.svg" alt="" />
+                                    <h5>C#</h5>
                                 </a>
                             </Link>
                         </div>
