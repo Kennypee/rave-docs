@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'neat';
+@import 'breakpoint';
 
 // global variables
 $container-width: 1024px;
@@ -24,4 +25,8 @@ a{
 .container{
     max-width: $container-width;
     margin: 0 auto;
+
+    @include breakpoint($l){
+        padding: 10px;
+    }
 }

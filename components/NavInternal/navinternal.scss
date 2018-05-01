@@ -8,7 +8,6 @@
     font-size: 14px;
     z-index: 3;
     background-color: #5F6CC7;
-    padding: 0 50px;
 
     &Top, &Bottom{
         overflow: hidden;
@@ -19,6 +18,10 @@
             line-height: 50px;
             margin-right: 100px;
 
+            @include breakpoint($m){
+                margin-right: 10px;
+            }
+
             img{
                 vertical-align: middle;
             }
@@ -26,6 +29,10 @@
 
         ul{
             display: inline-block;
+
+            @include breakpoint($s){
+                display: none;
+            }
         }
 
         ul li{
@@ -45,6 +52,10 @@
 
         .pullRight{
             float: right;
+
+            @include breakpoint($s){
+                display: inline-block;
+            }
         }
     }
 

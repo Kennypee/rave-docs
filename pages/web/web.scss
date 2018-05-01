@@ -10,6 +10,10 @@ body{
     background: linear-gradient(1.32deg, #FAFBFC -53.28%, #576AE6 35.62%);
     margin: 0 auto;
 
+    @include breakpoint($s){
+        height: 100%;
+    }
+
     .nav{
         width: 100%;
         font-size: 14px;
@@ -118,6 +122,10 @@ body{
     width: 100%;
     max-width: 600px;
     margin: 50px auto;
+
+    @include breakpoint($s){
+        padding: 10px;
+    }
 
     input{
         width: 100%;

@@ -21,17 +21,6 @@ const Nav = () => (
                     <li><a href="" className={style.navButton}>GET API KEYS</a></li>
                 </ul>
             </div>
-            {/* <div className={style.navBottom}>
-                <a href="" className={style.brand}>
-                    <img src="/static/rave.svg" alt="Flutterwave" />
-                </a>
-                <ul className={style.pullRight}>
-                    <li>Pricing</li>
-                    <li>Features</li>
-                    <li>Enterprise</li>
-                    <li>Developers</li>
-                </ul>
-            </div> */}
         </div>
     </nav>
 );
