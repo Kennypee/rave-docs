@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "components/head";
 import Nav from "components/Nav";
+import Drift from "components/Drift";
 import Link from "next/link";
 import style from './others.scss';
 
@@ -131,6 +132,7 @@ export default class Others extends React.Component {
                 {this._renderHeader()}
                 {this._renderContent()}
                 {this._renderSlack()}
+                <Drift />
             </React.Fragment>
         )
     }

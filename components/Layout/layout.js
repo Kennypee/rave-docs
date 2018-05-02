@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'components/head';
 import Nav from 'components/NavInternal';
+import Drift from "components/Drift";
 import style from './layout.scss';
 
 
@@ -43,6 +44,7 @@ const Layout = ({content, sidebar}) => (
                 </div>
             </div>
         </main>
+        <Drift />
     </React.Fragment>
 )
 

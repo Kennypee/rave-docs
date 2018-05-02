@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "components/head";
 import Nav from "components/Nav";
+import Drift from "components/Drift";
 import Link from "next/link";
 import style from './index.scss';
 
@@ -169,6 +170,7 @@ export default class Index extends React.Component {
                 {this._renderIntro()}
                 {this._renderGuidesAndResources()}
                 {this._renderSlack()}
+                <Drift />
             </React.Fragment>
         )
     }
