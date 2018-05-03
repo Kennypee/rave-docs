@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "components/head";
 import Nav from "components/Nav";
+import Search from "components/Search";
 import Drift from "components/Drift";
 import Link from "next/link";
 import style from './web.scss';
@@ -39,9 +40,7 @@ export default class Web extends React.Component {
     _renderContent() {
         return (
             <div className={style.content}>
-                <form action="">
-                    <input type="text" name="search" id="search" placeholder='Search technology name' />
-                </form>
+                <Search />
 
                 <div className={style.jsBlock}>
                     <div className={style.gridContainer}>
