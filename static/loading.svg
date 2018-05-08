@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.401 216.4" width="250" height="250">
+  <defs>
+    <style>
+      .cls-1, .cls-10, .cls-11, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #95989a;
+      }
+
+      .cls-1 {
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        opacity: 0.3;
+      }
+
+      .cls-3 {
+        opacity: 0.4;
+      }
+
+      .cls-4 {
+        opacity: 0.5;
+      }
+
+      .cls-5 {
+        opacity: 0.6;
+      }
+
+      .cls-6 {
+        opacity: 0.7;
+      }
+
+      .cls-7 {
+        opacity: 0.8;
+      }
+
+      .cls-8 {
+        opacity: 0.9;
+      }
+
+      .cls-9 {
+        opacity: 0.95;
+      }
+
+      .cls-10 {
+        opacity: 0.97;
+      }
+
+      .cls-12 {
+        fill: #7f7f7f;
+        font-size: 16px;
+        font-family: SFProDisplay-Regular, SF Pro Display;
+      }
+    </style>
+  </defs>
+  <g id="Group_242" data-name="Group 242" transform="translate(-26.899 -27.1)">
+    <g id="Group_238" data-name="Group 238">
+      <g id="Group_237" data-name="Group 237">
+        <g id="Group_236" data-name="Group 236">
+          <path id="Path_14" data-name="Path 14" class="cls-1" d="M153,42.2a15.1,15.1,0,1,1-15.1-15.1A15.151,15.151,0,0,1,153,42.2Z"/>
+          <path id="Path_15" data-name="Path 15" class="cls-2" d="M104,45.7a15.145,15.145,0,1,1-20.7-5.5A15.182,15.182,0,0,1,104,45.7Z"/>
+          <path id="Path_16" data-name="Path 16" class="cls-3" d="M63.4,73.3a15.145,15.145,0,1,1-20.7,5.5A15.159,15.159,0,0,1,63.4,73.3Z"/>
+          <path id="Path_17" data-name="Path 17" class="cls-4" d="M42,117.4a15.1,15.1,0,1,1-15.1,15.1A15.087,15.087,0,0,1,42,117.4Z"/>
+          <path id="Path_18" data-name="Path 18" class="cls-5" d="M45.5,166.4A15.145,15.145,0,1,1,40,187,15.182,15.182,0,0,1,45.5,166.4Z"/>
+          <path id="Path_19" data-name="Path 19" class="cls-6" d="M73,207a15.145,15.145,0,1,1,5.5,20.7A15.159,15.159,0,0,1,73,207Z"/>
+          <path id="Path_20" data-name="Path 20" class="cls-7" d="M117.2,228.4a15.1,15.1,0,1,1,15.1,15.1A15.087,15.087,0,0,1,117.2,228.4Z"/>
+          <path id="Path_21" data-name="Path 21" class="cls-8" d="M166.1,224.9a15.145,15.145,0,1,1,20.7,5.5A15.182,15.182,0,0,1,166.1,224.9Z"/>
+          <path id="Path_22" data-name="Path 22" class="cls-9" d="M206.7,197.4a15.145,15.145,0,1,1,20.7-5.5A15.159,15.159,0,0,1,206.7,197.4Z"/>
+          <path id="Path_23" data-name="Path 23" class="cls-10" d="M228.2,153.2a15.1,15.1,0,1,1,15.1-15.1A15.087,15.087,0,0,1,228.2,153.2Z"/>
+          <path id="Path_24" data-name="Path 24" class="cls-11" d="M224.6,104.3a15.145,15.145,0,1,1,5.5-20.7A15.009,15.009,0,0,1,224.6,104.3Z"/>
+        </g>
+      </g>
+    </g>
+    <text id="LOADING_" data-name="LOADING…" class="cls-12" transform="translate(96 141)"><tspan x="0" y="0">LOADING…</tspan></text>
+  </g>
+</svg>
