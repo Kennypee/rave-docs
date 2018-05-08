@@ -35,10 +35,10 @@ export default class Section extends React.Component {
     }
 
 	render() {
-        const { component: Component} = this.state;
+        const { component: Component,routes} = this.state;
         let props = {
             content:<Component/>,
-            sidebar:<Sidebar routes={this.state.routes} />
+            sidebar:<Sidebar routes={routes} />
         }
         return (
             <Layout {...props}>
@@ -49,5 +49,7 @@ export default class Section extends React.Component {
 }
 
 const Default = () => (
-    <div></div>
+    <div style={{margin:'0 auto',display:'table'}}>
+        <img src="/static/loading.svg" alt="" />
+    </div>
 )
