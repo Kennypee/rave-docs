@@ -43,7 +43,7 @@ app.prepare()
   })
 
   server.get('/guides/api', (req, res) => {
-    const actualPage = '/api'
+    const actualPage = '/api/sections'
     app.render(req, res, actualPage)
   })
 
