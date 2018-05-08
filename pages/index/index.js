@@ -36,12 +36,12 @@ export default class Index extends React.Component {
                             </Link>
                         </div>
                         <div className={style.gridColumn}>
-                            {/* <Link prefetch as="/guides/api" href="/api"> */}
+                            <Link prefetch as="/guides/api/home" href="/api/sections?section=home">
                                 <a>
                                     <img src="/static/apis.svg" alt="tutorial" />
                                     <h4>API Reference</h4>
                                 </a>
-                            {/*</Link>*/}
+                            </Link>
                         </div>
 
                     </div>
@@ -147,7 +147,7 @@ export default class Index extends React.Component {
                             <a href="">Learn about payments</a>
                         </div>
                         <div class={style.gridColumn}>
-                            <h4>The Full API Reference</h4>
+                            <h4>Fraud Protection</h4>
                             <p>
                                 Our proprietary fraud system, checks every transaction to
         ensure you’re covered and protected. With over
