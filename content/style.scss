@@ -1,9 +1,15 @@
+@import 'global';
+
 .markdown {
 	background: #FFFFFF;
 	border: 1px solid #FFFFFF;
 	padding: 1rem 2rem;
 	box-shadow: 0px 1.2px rgba(0, 0, 0, 0.12);
 	margin-bottom: 2rem;
+
+	@include breakpoint($s) {
+		padding: 10px;
+	}
 	
 	h1 {
 		font-size: 40px;

@@ -4,3 +4,17 @@
     width:100%;
     display: flex;
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.footer {
+    font-size: 12px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px 50px;
+    text-align: center;
+}
