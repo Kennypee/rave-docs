@@ -9,6 +9,10 @@
     z-index: 3;
     background-color: #5F6CC7;
 
+    .container {
+        max-width: 90%;
+    }
+
     &Top, &Bottom{
         overflow: hidden;
 
@@ -61,7 +65,6 @@
 
     &Top{
         color: $white;
-        border-bottom: 1px solid rgba($header-line,.2);
         text-transform: uppercase;
 
         

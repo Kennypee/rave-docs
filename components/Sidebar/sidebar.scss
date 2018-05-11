@@ -4,6 +4,9 @@
     width: 20%;
     min-height: 100vh;
     background-color: $sidebar-bg;
+    @include breakpoint($s) {
+        display: none;
+    }
     
     .brand{
         padding: 0 50px;

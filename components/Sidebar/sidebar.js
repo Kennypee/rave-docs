@@ -20,11 +20,12 @@ export default class Sidebar extends React.Component {
     render() {
         return (
             <div className={style.sidebar}>
-                <div className={style.brand}>
+                {/* TODO:  remove this when certain that it's not needed*/}
+                {/* <div className={style.brand}>
                     <a href="">
                         <img src="/static/rave.svg" alt=""/>
                     </a>
-                </div>
+                </div> */}
                 <div className={style.menu}>
                     {/*<a href="" className={style.back}>
                         <img src="/static/chevron-left.svg" alt=""/>
