@@ -50,7 +50,7 @@ const Routes = {
 	    },
 	    {
 	        title: 'Multicurrency Payments',
-	        url: 'Multicurrency-payments'
+	        url: 'multicurrency-payments'
 	    },
     ],
    
@@ -154,7 +154,7 @@ const Routes = {
     'Subscriptions' : [
 	    {
 	        title: 'List all subscriptions',
-	        url: 'list-all-subscripions'
+	        url: 'list-all-subscriptions'
 	    },
 	    {
 	        title: 'Fetch a subscription',
