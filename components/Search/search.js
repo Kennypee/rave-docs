@@ -1,6 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 import Algoliasearch from 'algoliasearch';
+import style from './search.scss'
 
 export default class Search extends React.Component {
 	constructor(props) {
@@ -14,7 +15,8 @@ export default class Search extends React.Component {
 
 	componentDidMount(){
 		let client = Algoliasearch('3WBFLEGU9E', 'bf6e2254857dffd75eb927ead5d94b98');
-		let index = client.initIndex('title');
+		let indexList = this.props.index != null ? this.props.index : 'title'
+		let index = client.initIndex(indexList);
 		this.setState({index : index})
 	}
 
@@ -46,8 +48,8 @@ export default class Search extends React.Component {
 			display: this.state.isSearching? "block":"none"
 		}
 		return(
-            <div className="container">
-	            <input type="text" name="search" id="search" placeholder='Search technology name' onChange={this.handleSearch.bind(this)}/>
+            <div className={style.content}>
+	            <input type="text" name="search" id="search" placeholder='Search resource name' onChange={this.handleSearch.bind(this)}/>
 	            <div style={loadingCSS}>
 	            	{this.state.results.map((hit,index) =>
 	            		<div key={index}>

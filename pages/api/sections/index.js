@@ -3,6 +3,7 @@ import style from './style.scss';
 import Head from "components/head";
 import Nav from "components/NavInternal";
 import Sidebar from 'components/Sidebar';
+import Drift from 'components/Drift';
 import Content from 'components/Content'; 
 import Routes from 'content/api/routes.js';
 
@@ -149,6 +150,7 @@ export default class Section extends React.Component{
                     <Component />        
                 </Content>
             </div>
+            <Drift />
             <footer className={style.footer}>
                 &copy; 2018 rave by flutterwave.
             </footer>
