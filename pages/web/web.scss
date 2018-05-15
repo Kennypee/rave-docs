@@ -167,14 +167,21 @@ body{
         margin-top: 40px;
 
         // TODO: add a transition effect on hover
+        a{
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
 
         img{
             display: block;
+            margin: 20px auto;
         }
 
         h5{
             font-weight: normal;
             margin-top: 12px;
+            text-align: center;
         }
     }
     

@@ -41,6 +41,7 @@
 			a {
 				text-decoration: underline;
 				color: #576AE6;
+				word-wrap: break-word;
 			}
 		}
 		
@@ -83,7 +84,6 @@
 	
 	blockquote {
 		padding: 1rem;
-		padding-top: 0rem;
 		background-color: rgba(254, 236, 170, 0.4);
 		border: 0.5px solid #C4CDD5;
 		p {
@@ -106,6 +106,7 @@
 		a {
 			text-decoration: underline;
 			color: #576AE6;
+			word-wrap: break-word;
 		}
 		code {
 			padding: 0px 3px;

@@ -119,6 +119,11 @@
             &:hover{
                 transform: scale(0.9);
             }
+            a{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
 
             img{
                 margin-top: 30px;
