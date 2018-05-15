@@ -1,3 +1,5 @@
+# This repo has been moved to https://gitlab.com/Flutterwavego/rave-docs You can request access on Slack or email joe@flutterwavego.com or az@flutterwavego.com
+
 # Rave Documentation
 
 This is the New documentation for Flutterwave's Rave, built using Nextjs and React.
