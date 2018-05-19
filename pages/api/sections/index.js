@@ -158,9 +158,11 @@ export default class Section extends React.Component{
         );
     }
 }
+
 const Home = () => (
     <h2>Rave API Documentation.</h2>
 )
+
 const Default = () => (
     <div className={style.loader}>
         <img src="/static/loading.svg" alt="" />

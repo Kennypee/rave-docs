@@ -82,11 +82,11 @@
         }
 
         .question{
-            color: #2A3255;
+            color: $white;
             display: inline-block;
             padding: 10px 15px;
-            background-color: #8396E8;;
-            border-radius: 20px;
+            background-color: transparentize(#8396E8, 0.7);
+            border-radius: 5px;
             font-size: 14px;        
         }
 
