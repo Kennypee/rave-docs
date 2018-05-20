@@ -3,40 +3,52 @@ import style from './sidebar.scss';
 export default class Sidebar extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { fixed: false};
+        this.state = {
+            fixed: false,
+            menuHidden: true,
+        };
     }
-    componentDidMount(){
+    componentDidMount() {
         window.addEventListener('scroll', (event) => {
             let fixed = false
-            if(window.scrollY > 60){
-                this.setState({fixed: true})
-            }else{
-                this.setState({fixed: false})
+            if (window.scrollY > 60) {
+                this.setState({ fixed: true })
+            } else {
+                this.setState({ fixed: false })
             }
-            
+
         })
     }
 
+    toggleMenu = () => {
+        const prevState = this.state.menuHidden;
+        this.setState(
+            {
+                menuHidden: !prevState,
+            }
+        );
+    }
+
     render() {
+        const {
+            menuHidden,
+        } = this.state;
+
         return (
             <div className={style.sidebar}>
-                {/* TODO:  remove this when certain that it's not needed*/}
-                {/* <div className={style.brand}>
-                    <a href="">
-                        <img src="/static/rave.svg" alt=""/>
-                    </a>
-                </div> */}
-                <div className={style.menu}>
-                    {/*<a href="" className={style.back}>
-                        <img src="/static/chevron-left.svg" alt=""/>
-                        Back
-                    </a>
-                    <header className={style.title}>NodeJS</header>*/}
+                <button
+                    className={style.sidebarButton}
+                    onClick={this.toggleMenu}
+                >
+                    {menuHidden ? 'Hide' : 'Show'} Menu
+                </button>
+
+                <div className={menuHidden ? style.menu : style.menuHidden}>
                     <ul className={style.list}>
                         {
                             Object.keys(this.props.routes).map((topLevel, index) => (
                                 <li key={index}>
-                                    <span className={style.title}>{topLevel}</span>
+                                    <header className={style.title}>{topLevel}</header>
                                     <ul className={style.subList}>
                                         {
                                             this.props.routes[topLevel].map((route, index) => (
@@ -44,14 +56,14 @@ export default class Sidebar extends React.Component {
                                                     <a href={route.url}>{route.title}</a>
                                                 </li>
                                             ))
-                                        } 
-                                    </ul> 
+                                        }
+                                    </ul>
                                 </li>
                             ))
                         }
                     </ul>
                 </div>
-            </div> 
+            </div>
         );
     }
 }

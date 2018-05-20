@@ -1,77 +1,91 @@
 @import 'global';
-
-.sidebar{
+.sidebar {
     width: 20%;
-    min-height: 100vh;
     background-color: $sidebar-bg;
     border-right: 1px solid $sidebar-menu-border;
-    @include breakpoint($s) {
-        display: none;
+    @include breakpoint($xl) {
+        min-height: 100vh;
     }
-    
-    .brand{
-        padding: 0 50px;
-        line-height: 45px;
-
-        img{
-            vertical-align: middle;
+    @include breakpoint($s) {
+        display: block;
+        width: 100vw;
+        min-height: none;
+        border-right: 0;
+        overflow-y: auto;
+    }
+    &Button {
+        background-color: $alert-info;
+        display: none;
+        font-size: 1em;
+        font-weight: bold;
+        transition: all .5s ease-in-out;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid transparentize($footer-line, 0.7);
+        height: 50px;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+        }
+        @include breakpoint($s) {
+            display: block;
         }
     }
-
-    .menu{
-        padding: 50px;
-        
-        .back{
+    .menu {
+        padding: 50px 30px;
+        @include breakpoint($s) {
+            display: block; // height: 0;
+            padding: 20px;
+        }
+        &Hidden {
+            display: none;
+        }
+        .back {
             display: block;
             margin-bottom: 14px;
             color: $sidebar-back;
-    
-            img{
+            img {
                 margin-right: 7px;
             }
         }
-    
-        .title{
-            margin-bottom: 5px;
+        .title {
+            margin-bottom: 10px;
             font-size: 17px;
             font-weight: $font-bold;
         }
-    
-        .list{
-    
-            &>li{
+        .list {
+            &>li {
                 list-style: none;
                 position: relative;
                 padding: 10px 0;
-
-                &:before{
+                &:after {
                     content: '';
                     display: inline-block;
                     position: absolute;
-                    top: 20px;
+                    top: 18px;
                     transform: translate(50%, -50%);
-                    right: -50px;
+                    right: -30px;
                     width: 12px;
                     height: 12px;
                     border: 1px solid $sidebar-circle;
                     border-radius: 50%;
                     background-color: $white;
+                    @include breakpoint($s) {
+                        display: none;
+                    }
                 }
-
-                &:hover{
+                &:hover {
                     color: $sidebar-list-hover;
                 }
             }
         }
-
-        .subList{
+        .subList {
             color: $sidebar-sub-list;
-
-            li{
+            padding: 0 5px;
+            li {
                 list-style: none;
                 padding: 5px;
-
-                a:hover{
+                a:hover {
                     color: $black;
                 }
             }

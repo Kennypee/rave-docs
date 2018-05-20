@@ -3,6 +3,10 @@
 .doc{
     width:100%;
     display: flex;
+
+    @include breakpoint($s){
+        display: block;
+    }
 }
 
 .loader {
