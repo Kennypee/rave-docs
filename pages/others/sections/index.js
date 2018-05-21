@@ -61,7 +61,7 @@ export default class Section extends React.Component {
 }
 
 const Default = () => (
-     <div style={{margin:'0 auto',display:'table'}}>
-        <img src="/static/loading.svg" alt="" />
+    <div>
+        <img src="/static/loading.svg" className={style.loader} alt="loading..." />
     </div>
 )

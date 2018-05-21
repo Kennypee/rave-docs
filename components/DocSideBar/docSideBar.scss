@@ -1,0 +1,103 @@
+@import 'global';
+.sidebar {
+    width: 20%;
+    background-color: #e5e5e5;
+    text-align: right;
+    
+    @include breakpoint($xl) {
+        min-height: 100vh;
+    }
+    @include breakpoint($s) {
+        display: block;
+        width: 100vw;
+        min-height: none;
+        border-right: 0;
+        overflow-y: auto;
+    }
+    &Button {
+        background-color: $alert-info;
+        display: none;
+        font-size: 1em;
+        font-weight: bold;
+        transition: all .5s ease-in-out;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid transparentize($footer-line, 0.7);
+        height: 50px;
+        cursor: pointer;
+        &:hover {
+            background-color: transparent;
+        }
+        @include breakpoint($s) {
+            display: block;
+        }
+    }
+    .menu {
+        padding: 0 50px 0 0;
+        margin-top: 120px;
+        border-right: 1px solid $sidebar-menu-border;
+        @include breakpoint($s) {
+            display: block; // height: 0;
+            padding: 20px;
+        }
+        &Hidden {
+            display: none;
+        }
+        .back {
+            display: block;
+            margin-bottom: 14px;
+            color: $sidebar-back;
+            img {
+                margin-right: 7px;
+            }
+        }
+        .title {
+            margin-bottom: 10px;
+            font-size: 17px;
+            font-weight: $font-bold;
+        }
+        .list {
+            &>li {
+                list-style: none;
+                position: relative;
+                padding: 10px 0;
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 22px;
+                    transform: translate(50%, -50%);
+                    right: -50px;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid $sidebar-circle;
+                    border-radius: 50%;
+                    background-color: $white;
+                    @include breakpoint($s) {
+                        display: none;
+                    }
+                }
+                &:hover {
+                    color: $sidebar-list-hover;
+                }
+            }
+        }
+        .subList {
+            color: $sidebar-sub-list;
+            padding: 0 5px;
+            li {
+                font-size: 0.9em;
+                list-style: none;
+                padding: 5px;
+                a {
+                    transition: all .3s linear;
+                    &:hover {
+                        display: inline-block;
+                        color: $black;
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+    }
+}
