@@ -1,7 +1,7 @@
 @import 'global';
 
 body{
-    background-color: #e5e5e5;
+    background-color: #DFE2EB;
 }
 .doc{
     width:100%;
@@ -19,6 +19,7 @@ body{
     width: 50px;
     height: auto;
     display: block;
+    animation: rolling 5s infinite linear;
 }
 
 .sidebar {
@@ -247,5 +248,14 @@ body{
     }
     h3 {
         margin: 1.5rem 0rem 0.75rem 0rem;
+    }
+}
+
+@keyframes rolling{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }

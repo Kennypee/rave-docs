@@ -44,6 +44,7 @@ export default class DocSidebar extends React.Component {
                 </button>
 
                 <div className={menuHidden ? style.menu : style.menuHidden}>
+                    <a href=""><img src="/static/left-arrow.svg" /> Back </a>
                     <ul className={style.list}>
                         {
                             Object.keys(this.props.routes).map((topLevel, index) => (

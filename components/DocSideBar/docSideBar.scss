@@ -1,7 +1,7 @@
 @import 'global';
 .sidebar {
     width: 20%;
-    background-color: #e5e5e5;
+    background-color: #DFE2EB;
     text-align: right;
     
     @include breakpoint($xl) {
@@ -13,6 +13,7 @@
         min-height: none;
         border-right: 0;
         overflow-y: auto;
+        text-align: left;
     }
     &Button {
         background-color: $alert-info;
@@ -37,7 +38,7 @@
         margin-top: 120px;
         border-right: 1px solid $sidebar-menu-border;
         @include breakpoint($s) {
-            display: block; // height: 0;
+            display: block;
             padding: 20px;
         }
         &Hidden {
@@ -53,7 +54,7 @@
         }
         .title {
             margin-bottom: 10px;
-            font-size: 17px;
+            font-size: 1.25em;
             font-weight: $font-bold;
         }
         .list {
@@ -84,9 +85,8 @@
         }
         .subList {
             color: $sidebar-sub-list;
-            padding: 0 5px;
             li {
-                font-size: 0.9em;
+                font-size: 1em;
                 list-style: none;
                 padding: 5px;
                 a {
