@@ -2,8 +2,6 @@
 
 .content{
     width: 100%;
-    // max-width: 600px;
-    // margin: 50px auto;
     border-bottom: 1px solid #ccc;
 
     input{
@@ -60,5 +58,17 @@
         &>p {
             margin-top: 10px;
         }
+    }
+}
+
+.search{
+    &Input{
+        position: relative;
+    }
+    &Image{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
     }
 }

@@ -52,14 +52,11 @@
                 display: inline-block;
             }
         }
-    }
+    } 
 
     &Top{
         color: $white;
-        border-bottom: 1px solid rgba($header-line,.2);
-        text-transform: uppercase;
-
-        
+        text-transform: uppercase;        
     }
 
     

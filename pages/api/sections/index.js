@@ -164,7 +164,7 @@ const Home = () => (
 )
 
 const Default = () => (
-    <div className={style.loader}>
-        <img src="/static/loading.svg" alt="" />
+    <div >
+        <img src="/static/loading.svg" className={style.loader} alt="loading..." />
     </div>
 )

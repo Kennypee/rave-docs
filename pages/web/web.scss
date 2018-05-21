@@ -151,6 +151,10 @@ body{
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 50px;
+
+        @include breakpoint($s){
+            justify-content: space-around;
+        }
     }
 
     .gridColumn{
@@ -166,7 +170,13 @@ body{
         justify-content: center;
         margin-top: 40px;
 
-        // TODO: add a transition effect on hover
+        .gridBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
         a{
             display: block;
             height: 100%;
@@ -175,12 +185,11 @@ body{
 
         img{
             display: block;
-            margin: 20px auto;
         }
 
         h5{
             font-weight: normal;
-            margin-top: 12px;
+            margin-top: 14px;
             text-align: center;
         }
     }

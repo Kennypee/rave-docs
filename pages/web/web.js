@@ -46,7 +46,7 @@ export default class Web extends React.Component {
                     <div className={style.gridContainer}>
                         <div className={style.gridColumn}>
                             <Link prefetch as="/guides/web/react" href="/web/sections?section=react">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/react.svg" alt="" />
                                     <h5>ReactJs</h5>
                                 </a>
@@ -54,7 +54,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                              <Link prefetch as="/guides/web/angular" href="/web/sections?section=angular">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/angular.svg" alt="" />
                                     <h5>AngularJs</h5>
                                 </a>
@@ -62,7 +62,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                              <Link prefetch as="/guides/web/vue" href="/web/sections?section=vue">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/vue-logo.svg" alt="" />
                                     <h5>VueJs</h5>
                                 </a>
@@ -70,7 +70,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                              <Link prefetch as="/guides/web/node" href="/web/sections?section=node">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/nodejs.svg" alt="" />
                                     <h5>NodeJs</h5>
                                 </a>
@@ -78,7 +78,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                             <Link prefetch as="/guides/web/php" href="/web/sections?section=php">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/php.svg" alt="" />
                                     <h5>PHP</h5>
                                 </a>
@@ -86,7 +86,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                             <Link prefetch as="/guides/web/go" href="/web/sections?section=go">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/golang.svg" alt="" />
                                     <h5>GO</h5>
                                 </a>
@@ -94,7 +94,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                             <Link prefetch as="/guides/web/python" href="/web/sections?section=python">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/python.svg" alt="" />
                                     <h5>Python</h5>
                                 </a>
@@ -102,7 +102,7 @@ export default class Web extends React.Component {
                         </div>
                         <div className={style.gridColumn}>
                             <Link prefetch as="/guides/web/csharp" href="/web/sections?section=csharp">
-                                <a>
+                                <a className={style.gridBox}>
                                     <img src="/static/csharp.svg" alt="" />
                                     <h5>C#</h5>
                                 </a>

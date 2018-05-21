@@ -32,7 +32,7 @@
         }
     }
     .menu {
-        padding: 50px 30px;
+        padding: 50px;
         @include breakpoint($s) {
             display: block; // height: 0;
             padding: 20px;
@@ -62,9 +62,9 @@
                     content: '';
                     display: inline-block;
                     position: absolute;
-                    top: 18px;
+                    top: 25px;
                     transform: translate(50%, -50%);
-                    right: -30px;
+                    right: -50px;
                     width: 12px;
                     height: 12px;
                     border: 1px solid $sidebar-circle;
@@ -83,10 +83,16 @@
             color: $sidebar-sub-list;
             padding: 0 5px;
             li {
+                font-size: 0.9em;
                 list-style: none;
                 padding: 5px;
-                a:hover {
-                    color: $black;
+                a {
+                    transition: all .3s linear;
+                    &:hover {
+                        display: inline-block;
+                        color: $black;
+                        transform: translateX(10px);
+                    }
                 }
             }
         }

@@ -12,10 +12,26 @@ const Nav = () => (
                     </a>
                 </Link>
                 <ul>
-                    <li className={style.list}>Solutions</li>
-                    <li>Products</li>
-                    <li>Company</li>
-                    <li>Blog</li>
+                    <li>
+                        <Link href=''>
+                            TUTORIALS
+                        </Link>
+                    </li>
+                    <li>
+                        <Link prefetch href='/guides/api/home'>
+                            API REFERENCE
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href=''>
+                            BLOG
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href=''>
+                            FAQs
+                        </Link>
+                    </li>
                 </ul>
                 <ul className={style.pullRight}>
                     <li><a href="" className={style.navButton}>GET API KEYS</a></li>

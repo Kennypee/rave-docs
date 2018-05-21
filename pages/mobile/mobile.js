@@ -45,7 +45,7 @@ export default class Mobile extends React.Component {
                 <div className={style.gridContainer}>
                     <div className={style.gridColumn}>
                         <Link prefetch as="/guides/mobile/android" href="/mobile/sections?section=android">
-                            <a>
+                            <a className={style.gridBox}>
                                 <img src="/static/android-black.svg" alt="" />
                                 <h5>Android</h5>
                             </a>
@@ -53,7 +53,7 @@ export default class Mobile extends React.Component {
                     </div>
                     <div className={style.gridColumn}>
                         <Link prefetch as="/guides/mobile/ios" href="/mobile/sections?section=ios">
-                            <a>
+                            <a className={style.gridBox}>
                                 <img src="/static/ios-black.svg" alt="" />
                                 <h5>iOS</h5>
                             </a>
@@ -61,7 +61,7 @@ export default class Mobile extends React.Component {
                     </div>
                     <div className={style.gridColumn}>
                         <Link prefetch as="/guides/mobile/cordova" href="/mobile/sections?section=cordova">
-                            <a>
+                            <a className={style.gridBox}>
                                 <img src="/static/cordova.svg" alt="" />
                                 <h5>Cordova</h5>
                             </a>
@@ -69,7 +69,7 @@ export default class Mobile extends React.Component {
                     </div>
                     <div className={style.gridColumn}>
                         <Link prefetch as="/guides/mobile/kotlin" href="/mobile/sections?section=kotlin">
-                            <a>
+                            <a className={style.gridBox}>
                                 <img src="/static/kotlin.svg" alt="" />
                                 <h5>Kotlin</h5>
                             </a>

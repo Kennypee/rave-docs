@@ -49,7 +49,10 @@ export default class Search extends React.Component {
 		}
 		return(
             <div className={style.content}>
+				<div className={style.searchInput}>
 	            <input type="text" name="search" id="search" placeholder='Search resource name' onChange={this.handleSearch.bind(this)}/>
+				<img src="/static/search.png" className={style.searchImage} />
+				</div>
 	            <div style={loadingCSS}>
 	            	{this.state.results.map((hit,index) =>
 	            		<div key={index}>
