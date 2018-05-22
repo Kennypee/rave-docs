@@ -3,7 +3,7 @@ import Search from "components/Search";
 
 const DocContent = (props) => (
     <div className={style.contentContainer}>
-        <Search index="api" placeholderText="Search API Documentation" />
+        <Search index="api" placeholderText="Search the API Documentation" />
         <div className={style.markdown}>
             {props.children}
         </div>
