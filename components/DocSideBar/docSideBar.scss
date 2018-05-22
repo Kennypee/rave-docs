@@ -1,6 +1,6 @@
 @import 'global';
 .sidebar {
-    width: 20%;
+    width: 30%;
     background-color: #DFE2EB;
     text-align: right;
     
@@ -40,6 +40,7 @@
         @include breakpoint($s) {
             display: block;
             padding: 20px;
+            margin-top: 20px;
         }
         &Hidden {
             display: none;
@@ -94,7 +95,11 @@
                     &:hover {
                         display: inline-block;
                         color: $black;
-                        transform: translateX(10px);
+                        transform: translateX(-10px);
+
+                        @include breakpoint($s){
+                            transform: translateX(10px);
+                        }
                     }
                 }
             }

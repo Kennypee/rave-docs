@@ -5,7 +5,7 @@ body{
 }
 .doc{
     width:100%;
-    max-width: 1000px;
+    max-width: 1140px;
     margin: 0 auto;
     display: flex;
 
@@ -57,7 +57,7 @@ body{
     .menu {
         padding: 50px;
         @include breakpoint($s) {
-            display: block; // height: 0;
+            display: block;
             padding: 20px;
         }
         &Hidden {
@@ -114,7 +114,11 @@ body{
                     &:hover {
                         display: inline-block;
                         color: $black;
-                        transform: translateX(10px);
+                        transform: translateX(-10px);
+
+                        @include breakpoint($s){
+                            transform: translateX(10px);
+                        }
                     }
                 }
             }
