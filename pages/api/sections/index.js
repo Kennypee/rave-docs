@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './docs.scss';
+import style from '../../_shared/docs.scss';
 import Head from "components/head";
 import Nav from "components/NavInternal";
 import Sidebar from 'components/DocSideBar';
@@ -192,7 +192,7 @@ export default class Docs extends React.Component {
                 <Nav />
                 <div className={style.doc}>
                     <Sidebar routes={Routes} />
-                    <Content>
+                    <Content placeholder="Search the API Documentation">
                         <Component />
                     </Content>
                 </div>

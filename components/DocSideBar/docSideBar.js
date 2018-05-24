@@ -1,4 +1,4 @@
-import style from './docSideBar.scss';
+import style from './docSideBar.scss'
 
 export default class DocSidebar extends React.Component {
     constructor(props) {

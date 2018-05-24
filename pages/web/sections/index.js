@@ -1,6 +1,10 @@
-import Layout from 'components/Layout'
+import React from 'react';
+import style from '../../_shared/docs.scss';
+import Head from "components/head";
+import Nav from "components/NavInternal";
 import Sidebar from 'components/InternalSidebar';
-import style from 'content/style.scss';
+import Drift from 'components/Drift';
+import Content from 'components/DocContent';
 
 export default class Section extends React.Component {
     constructor(props) {
@@ -55,15 +59,20 @@ export default class Section extends React.Component {
     }
 
 	render() {
-        const { component: Component,routes} = this.state;
-        let props = {
-            content:<Component/>,
-            sidebar:<Sidebar routes={routes} />
-        }
+        const { component: Component, routes : Routes } = this.state;
+
         return (
-            <Layout {...props}>
-                
-            </Layout>
+            <React.Fragment>
+                <Head />
+                <Nav />
+                <div className={style.doc}>
+                    <Sidebar routes={Routes} />
+                    <Content placeholder="Search for a guide">
+                        <Component />
+                    </Content>
+                </div>
+                <Drift />
+            </React.Fragment>
         );
     }
 }
